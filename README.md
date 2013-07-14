@@ -5,7 +5,7 @@ Visit the official [Drupal PCI Compliance website here](http://drupalpcicomplian
 
 ## Download
 
-[Download the Latest Version in PDF](https://github.com/rickmanelius/drupalpcicompliance/blob/master/DrupalPCICompliance.pdf)
+[Download the Latest Version in PDF](http://drupalpcicompliance.org/files/DrupalPCICompliance.pdf)
 
 Alternatively, you can download, clone, or fork the project to get access to the markdown and HTML versions of this report.
 
