@@ -5,7 +5,9 @@ title: Home
 
 ## Obtaining the Report
 
-Simply click the [tar.qz](https://github.com/rickmanelius/drupalpcicompliance/tarball/master) or [.zip](https://github.com/rickmanelius/drupalpcicompliance/zipball/master) buttons at the very top of the page to download the full repository. In the resulting folder, you will see this document available in several formats: markdown, HTML, and pdf.
+<a href="http://drupalpcicompliance.org/files/DrupalPCICompliance.pdf" id="download-callout">Download the Report</a>
+
+Alternatively, you can [download](https://github.com/rickmanelius/drupalpcicompliance/zipball/master), [clone](https://github.com/rickmanelius/drupalpcicompliance), or [fork](https://github.com/rickmanelius/drupalpcicompliance/fork) this project's github respository to get access to the markdown and HTML versions of this report.
 
 ## Stay Up to Date
 

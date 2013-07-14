@@ -478,3 +478,19 @@ Rick Manelius Overrides to Default Theme
 img{
   max-width: 400px;
 }
+
+#download-callout {
+  display: inline-block;
+  padding: 10px 10px 10px 10px;
+  color: #fff;
+  background: #0090ff no-repeat 95% 50%;
+  font-weight: 700;
+  box-shadow: 0 0 10px rgba(0,0,0,.5);
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+#main_content #download-callout:hover {
+  color: #fff;
+  background: #22A2ff no-repeat 95% 50%;
+}
