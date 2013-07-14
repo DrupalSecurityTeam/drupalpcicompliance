@@ -7,7 +7,7 @@ title: Home
 
 <a href="http://drupalpcicompliance.org/files/DrupalPCICompliance.pdf" id="download-callout">Download the Report</a>
 
-Alternatively, you can [download](https://github.com/rickmanelius/drupalpcicompliance/zipball/master), [clone](https://github.com/rickmanelius/drupalpcicompliance), or [fork](https://github.com/rickmanelius/drupalpcicompliance/fork) this project's github respository to get access to the markdown and HTML versions of this report.
+Alternatively, you can [download](https://github.com/rickmanelius/drupalpcicompliance/zipball/master), [clone](https://github.com/rickmanelius/drupalpcicompliance), or [fork](https://github.com/rickmanelius/drupalpcicompliance/fork) this project's [github respository](https://github.com/rickmanelius/drupalpcicompliance) to get access to the markdown and HTML versions of this report.
 
 ## Stay Up to Date
 
