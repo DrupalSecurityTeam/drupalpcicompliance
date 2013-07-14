@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Drupal PCI Compliance." />
+    <link rel="stylesheet" type="text/css" media="screen" href="/stylesheets/stylesheet.css">
+    <script>
+     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+     ga('create', 'UA-41961005-1', 'drupalpcicompliance.org');
+     ga('send', 'pageview');
+   </script>
+
+
+    <title> {% if page.title %} {{ page.title }} | {% endif %} Drupal PCI Compliance</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <div id="header_nav">
+            <ul>
+            {% for page in site.pages %}
+              <li>
+                <a href="{{ page.url }}">
+                  {{ page.title }}
+                </a>
+              </li>
+            {% endfor %}
+            </ul>
+          </div>
+          <a id="forkme_banner" href="https://github.com/rickmanelius/drupalpcicompliance">View on GitHub</a>
+
+          <h1 id="project_title">Drupal PCI Compliance White Paper</h1>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/rickmanelius/drupalpcicompliance/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/rickmanelius/drupalpcicompliance/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        {{ content }}
+      </section>
+    </div>        
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">
+          The <em>Drupal PCI Compliance White Paper</em> is licensed under a <a href="http://creativecommons.org/licenses/by-nd/3.0/us/">Creative Commons Attribution No Derivatives license</a>. For attribution you must link to this site. <a href="/news/2013/06/21/why-we-chose-creative-commons-attribution-no-derivatives-for-the-license/">Why?</a>
+        </p>
+        <p>
+          DrupalPCICompliance is maintained by <a href="https://github.com/rickmanelius">rickmanelius</a>.
+        </p> 
+        <p>
+          Drupal is a <a href="http://drupal.com/trademark">registered trademark</a> of <a href="http://buytaert.net">Dries Buytaert</a>.
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>

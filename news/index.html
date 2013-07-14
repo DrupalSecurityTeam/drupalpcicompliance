@@ -1,0 +1,14 @@
+---
+layout: default
+title: News
+---
+
+<h2> News </h2>
+
+{% for post in site.posts %}
+ 
+<a href="{{ post.url }}"><h3> {{ post.title }} </h3></a>
+
+{{ post.content }}
+ 
+{% endfor %}
