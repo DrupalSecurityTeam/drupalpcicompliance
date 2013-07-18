@@ -37,6 +37,7 @@ The following terms are used extensively throughout this document and are provid
 * **QSA:** Acronym for “Qualified Security Assessor,” company approved by the PCI SSC to conduct PCI DSS on-site assessments.
 * **PCI:** Acronym for “Payment Card Industry.”
 * **ROC:** Acronym for “Report on Compliance,” which contains details documenting an entity’s compliance status with the PCI DSS.
+* **SAQ:** Acronym for “Self-Assessment Questionnaire,” a checklist that you must complete and adhere to in order to obtain and maintain PCI compliance..
 
 A full list of definitions can be found in the PCI document titled _Glossary of Terms, Abbreviations, and Acronyms_ <sup>[5](#cite-5)</sup>.
 
@@ -91,7 +92,7 @@ This should be obvious, but any component of your system that has a known defaul
 
 ### Requirement 3. Protect Stored Data
 
-Ideally credit cards are not being stored on a Drupal website at all. If they are stored, they must be encrypted in such a manner that anything with access to the database, server, or network cannot decode the information in a manner that is not intended. Achieving this is non-trivial and should only be attempted after gaining close familiarity with the PCI SAQ D standard.
+Ideally credit cards are not being stored on a Drupal website at all. If they are stored, they must be encrypted in such a manner that anything with access to the database, server, or network cannot decode the information in a manner that is not intended. Achieving this is non-trivial and should only be attempted after gaining close familiarity with the PCI SAQ D standard (see the section _Self-Assessment Questionnaire_ for definitions of the SAQ validation types).
 
 ### Requirement 4. Encrypt transmission of cardholder data across open, public networks
 
@@ -131,7 +132,7 @@ All the hardware testing, security scans, and audits in the world will not help 
 
 ## Self-Assessment Questionnaire
 
-Knowing how to get started can seem overwhelming at first. Thankfully, the PCI council has provided detailed reference guides and instructions<sup>[12](#cite-12)</sup>. All of these materials culminate to what is called your Self Assessment Questionnaire (SAQ). This form is essentially a checklist that you must complete and adhere to in order to obtain and maintain PCI compliance.
+Knowing how to get started can seem overwhelming at first. Thankfully, the PCI council has provided detailed reference guides and instructions<sup>[12](#cite-12)</sup>. All of these materials culminate to your Self-Assessment Questionnaire. This form is essentially a checklist that you must complete and adhere to in order to obtain and maintain PCI compliance.
 
 Your credit card processor and acquiring bank are required to ask you for annual SAQ forms - if they haven’t asked yet, they will soon!
 
@@ -323,7 +324,7 @@ Getting started can seem like a daunting task. However, breaking it down into sm
 * **Assess options.** Now that you know what you have to work with and what the goals are, evaluate the cost/effort/risk of 2-3 scenarios.
 * **Decide on a method.** Ultimately the business owner must ultimately pick a specific method balancing all the factors.
 * **Determine responsibilities.** Once a decision is made, it’s time to clearly articulate who is responsible for what at each stage in the development cycle. There should also be clear sign off points established.
-* **Complete the relevant SAQ:** The Self Assessment Questionnaire is your key tool for performing a gap analysis and determining whether you are currently compliant.
+* **Complete the relevant SAQ:** The Self-Assessment Questionnaire is your key tool for performing a gap analysis and determining whether you are currently compliant.
 * **Prioritize PCI responsibilities.** Becoming compliant can take a long time, but some responsibilities are more critical than others. The PCI industry created a document title The Prioritized Approach to Pursue PCI DSS Compliance, which gives clear guidance on what should be done first to minimize risk during the entire process.
 * **Create plan and execute.** Once you’ve identified what needs to be done and created a plan, it’s time to make consistent progress toward checking off items on the list.
 
