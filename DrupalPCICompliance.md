@@ -37,7 +37,7 @@ The following terms are used extensively throughout this document and are provid
 * **QSA:** Acronym for “Qualified Security Assessor,” company approved by the PCI SSC to conduct PCI DSS on-site assessments.
 * **PCI:** Acronym for “Payment Card Industry.”
 * **ROC:** Acronym for “Report on Compliance,” which contains details documenting an entity’s compliance status with the PCI DSS.
-* **SAQ:** Acronym for “Self-Assessment Questionnaire,” a checklist that you must complete and adhere to in order to obtain and maintain PCI compliance..
+* **SAQ:** Acronym for “Self-Assessment Questionnaire,” a checklist that you must complete and adhere to in order to obtain and maintain PCI compliance.
 
 A full list of definitions can be found in the PCI document titled _Glossary of Terms, Abbreviations, and Acronyms_ <sup>[5](#cite-5)</sup>.
 
