@@ -2,7 +2,7 @@
 layout: post
 category: news
 author: Rick Manelius
-tags : [intro, beginner, jekyll, tutorial]
+tags : [PCI compliance, Drupal, white paper, security]
 ---
 
 The _Drupal PCI Compliance White Paper_ is licensed under a [Creative Commons, Attribution-No Derivatives license](http://creativecommons.org/licenses/by-nd/3.0/). We did this consciously and for several reasons that we wanted to share.
