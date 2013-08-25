@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Drupal PCI Compliance." />
+    <link rel="stylesheet" type="text/css" media="screen" href="/stylesheets/stylesheet.css">
+    <script>
+     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+     ga('create', 'UA-41961005-1', 'drupalpcicompliance.org');
+     ga('send', 'pageview');
+   </script>
+
+
+    <title>  Top 12 Drupal PCI Compliance Myths |  Drupal PCI Compliance</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <div id="header_nav">
+            <ul>
+            
+              <li>
+                <a href="/">
+                  Home
+                </a>
+              </li>
+            
+              <li>
+                <a href="/news/">
+                  News
+                </a>
+              </li>
+            
+              <li>
+                <a href="/sponsors/">
+                  Sponsors
+                </a>
+              </li>
+            
+            </ul>
+          </div>
+          <a id="forkme_banner" href="https://github.com/rickmanelius/drupalpcicompliance">View on GitHub</a>
+
+          <h1 id="project_title">Drupal PCI Compliance White Paper</h1>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/rickmanelius/drupalpcicompliance/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/rickmanelius/drupalpcicompliance/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h2> Top 12 Drupal PCI Compliance Myths </h2>
+
+<div class="author-by-line">
+  Submitted by Rick Manelius on Sat Aug 24 00:00:00 -0600 2013
+</div>
+
+<p><em><a href='#myths'>Jump right to the myths</a></em></p>
+
+<p>True story: we had just completed a six figure eCommerce project for a client that wanted to improve their online sales (an admirable goal) to supplement their successful brick and mortar business. However, when it came to hosting they wanted to do it on the cheap with one of the many $7/month shared hosting plans advertised all over the internet. Ignoring the obvious performance considerations (of which there were many), there was simply no way our client was going to be able to implement the necessary security configurations on this shared-hosting environment to meet their PCI compliance obligations.</p>
+
+<p>We immediately warned our client that this was a bad idea and cited the reasons why. To our dismay, our client then informed us that a support representative at the hosting company stated that there was nothing to worry about and that the servers were compliant. This was a blatant lie and our client wanted to believe it because nobody wants to feel duped. Thankfully, we were able to get the client to reconsider after we provided additional information.</p>
+
+<p>This is just one example of the uphill battle we face&#8230;</p>
+
+<p>In short, there is a lot of misinformation, disinformation, and lack of correct information out there regarding PCI compliance for the Drupal platform. To help fix this, two colleagues and I recently published a <em><a href='http://drupalpcicompliance.org/'>Drupal PCI compliance white paper</a></em> that gives a high level overview of the subject matter as well as appropriate next steps for anyone involved in Drupal eCommerce(<a href='#cite-1'>1</a>).</p>
+
+<p>That said, there is only so much information we could pack into the paper while keeping it short enough in length to meet all the intended goals of the project (i.e. easy to read, concise, accurate).</p>
+
+<p>This article expands upon the &#8220;myths&#8221; section of the paper. If you have any questions or constructive, then please leave us a comment below. We&#8217;ll use said feedback to improve the quality of this article as well as the paper itself.</p>
+
+<p><em>If you have no idea what PCI compliance is and/or why you should care, we highly recommend reading the executive summary and introduction of the <a href='http://drupalpcicompliance.org'>white paper</a> before proceeding.</em></p>
+<a name='myths'> </a>
+<h3 id='myth_1_drupal_is_pci_compliant'>Myth 1: Drupal is PCI Compliant.</h3>
+
+<p>Drupal <em>can</em> be a part of a fully PCI compliant card data environment (CDE) when it is correctly setup, configured, and maintained within in the context of the rest of the system. The most important point to emphasize is that Drupal is only one component the total environment, which requires a holistic approach to ensure that entire process of processing, transmitting, and/or storing card data is secured from end to end.</p>
+
+<p>Example: a developer can perform a thorough security audit and ensure that a website is properly configured and that all code has been updated with the latest security patches. However, if the server&#8217;s password is simply &#8220;password&#8221; or an unauthorized person has physical access to the server, the integrity of that code can be compromised rather easily. This would undermine all the work done by the developer.</p>
+
+<p>In short, the security of a Drupal site (with respect to credit card processing) is only as strong as the weakest link. Therefore, the question of whether or not Drupal is PCI compliant is ill posed because Drupal cannot become compliant by itself.</p>
+
+<p>A second point to underscore is the highly configurable nature of Drupal and the impact that this can have on its security. One could completely configure it to adhere to best practices and (in combination with the rest of the CDE) achieve PCI compliance. However, changing a single configuration in an inappropriate manner could eliminate one&#8217;s compliance (e.g. disabling a module that enforced HTTPS).</p>
+
+<p>There are additional issues that affect a Drupal application&#8217;s PCI compliance, such as password strength for administrative users, a company security policy, etc.</p>
+
+<p>It&#8217;s better to think of Drupal as PCI <em>compatible</em> to emphasize that it can be properly used in the context of a secure, PCI compliant environment. However, it itself is <em>not</em> PCI compliant.</p>
+
+<h3 id='myth_2_ubercart_and_drupal_commerce_are_pci_compliant'>Myth 2: Ubercart and Drupal Commerce are PCI Compliant</h3>
+
+<p>All responses to Myth #1 apply equally here with the addition of two other points.</p>
+
+<p>1) Installation and configuration is especially important here with respect to the payment gateways selected. A merchant-managed solution (where the credit card is sent directly to Drupal) has many more places that are vulnerable to a security breach when compared to shared-management solutions, such as redirecting to an externally hosted payment page secured by PayPal, Authorize.Net, etc.</p>
+
+<p>2) There is an oddity in the PA-DSS standard that basically states that all open source code must be maintained as if the person using it was the creator/author of said code. Therefore the user is responsible for the security of the code and not the community from which it was derived. Therefore, even if was possible to claim that <em>Ubercart</em> or <em>Drupal Commerce</em> were PCI compliant, the onus would fall on the user to prove that.</p>
+
+<h3 id='myth_3_i_only_need_https_to_be_secure'>Myth 3: I Only Need HTTPs to Be Secure.</h3>
+
+<p>Securing the transaction from the Drupal application to the payment gateway addresses only one of the 12 sections of the PCI standard. There are a significant number of other vulnerabilities that can exist at the server, network, and application level.</p>
+
+<p>For more examples specific to Drupal, see the <em>Drupal Specific Exploits</em> section of the <a href='http://drupalpcicompliance.org'>white paper</a>.</p>
+
+<h3 id='myth_4_i_am_pci_compliant_therefore_im_untouchable'>Myth 4: I am PCI Compliant; Therefore I&#8217;m Untouchable.</h3>
+
+<p>The unfortunate reality is that PCI compliance is not a guarantee against all possible attacks(<a href='#cite-2'>2</a>). However, it <em>DOES</em> offer a safe harbor for those that can prove they were compliant at the time of the incident. The main benefit of this safe harbor is that the company experiencing the breach will not have to incur the $25-$215 fine per transaction in the calendar year of the breach.</p>
+
+<p>Two take home points:</p>
+
+<ol>
+<li>PCI compliance should be considered a minimum level of security that should be attained and maintained when handling credit card transactions.</li>
+
+<li>Part of the PCI DSS standard (Requirement 12) addresses a proper course of action in the event of a breach. The point of this requirement is to emphasize that one must still plan for that possibility despite having all the proper security measures in place because PCI compliance is not a silver bullet.</li>
+</ol>
+
+<h3 id='myth_5_i_can_achieve_pci_compliance_using_shared_hosting'>Myth 5: I Can Achieve PCI Compliance Using Shared Hosting.</h3>
+
+<p>Shared hosting is simply not secure enough for PCI SAQ C because there are simply too many users (both customers and employees of the hosting company) that have access to the server and you simply do not have enough control in locking down the system.</p>
+
+<p>It is possible to become PCI compliant using cloud hosting, but proper research must be done. Most reputable companies will explicitly state on their websites whether or not they can be compliant. Examples:</p>
+
+<ol>
+<li>Rackspace Cloud cannot be PCI compliant because of their multi-tenant data center infrastructure(<a href='#cite-3'>3</a>).</li>
+
+<li>Amazon AWS EC2 can be part of a PCI compliant CDE and will even provide you their documentation if you comply with their NDA(<a href='#cite-4'>4</a>).</li>
+</ol>
+
+<p>If you&#8217;re hosting provider does not explicitly state this information, it&#8217;s imperative that you communicate with them to get an answer in writing.</p>
+
+<h3 id='myth_6_sharedmanagement_methods_are_100_foolproof'>Myth 6: Shared-management Methods are 100% Foolproof</h3>
+
+<p>This is false because modifying code at the Drupal application layer can result in a man in the middle attack, the introduction of a keylogger, etc.</p>
+
+<p>The <em>Information Supplement: PCI DSS E-commerce Guidelines</em> document from the <em>PCI Standards Security Council</em>(<a href='#cite-5'>5</a>) states this very clearly in section 3.4.3.</p>
+
+<p><em>&#8220;PCI DSS Scoping Guidance: Merchants should understand that outsourcing to a third party via a shared- management implementation does not allow the merchant to outsource PCI DSS responsibility, regardless of whether a merchant is eligible to complete a self-assessment questionnaire (SAQ). With each of these shared-management implementations, there is still security risk for the merchant since weaknesses on the merchant’s website can lead to compromise of the payment card data during the transaction process. See “Security Considerations for Shared-Management E-commerce Implementations” on page 17 for risks specific to each implementation. Due to these risks to a merchant’s website and payment card data, even in outsourced scenarios, it is recommended that merchants implement applicable PCI DSS controls as needed to ensure the security of the website.&#8221;</em></p>
+
+<p>The document event goes as far as outlining the specific means that each shared-management method can be attacked in section 3.4.3.4.</p>
+
+<ul>
+<li><em>&#8220;Direct-post API Approach: With the direct-post API approach, the merchant is still responsible for the web page that is presented to the consumer, and the merchant hosts the fields on the payment page that accept the data—only the cardholder data is posted directly from the consumer to the service provider. Since the payment pages are hosted by the merchant, the payment pages are only as secure as the merchant’s web site, and a compromise of the merchant’s system could lead to a compromise of payment card data.&#8221;</em></li>
+
+<li><em>&#8220;iFrame Approach: With the iFrame approach, the iFrame must be configured and managed to prevent it from being modified to send cardholder data to an alternate and unauthorized source.&#8221;</em></li>
+
+<li><em>&#8220;Hosted-payment Page Approach: With hosted payment pages, a compromise of the merchant’s server could lead to redirection of communications intended for the e-commerce payment processor, allowing payment card data to be intercepted and stolen as transactions occur.&#8221;</em></li>
+</ul>
+
+<p>The point is that shared-management solutions, while significantly more secure than merchant-managed solutions, are not silver bullet solutions that allow one to completely outsource their responsibility.</p>
+
+<h3 id='myth_7_pci_compliance_is_their_responsibility'>Myth 7: PCI Compliance is <em>Their</em> Responsibility.</h3>
+
+<p>The process of achieving compliance also requires a holistic approach and cannot be placed on just the development team, operations team, management, leadership, etc. Decisions and actions made by any one party can undermine the efforts of everyone else. Therefore, PCI compliance is a team effort.</p>
+
+<h3 id='myth_8_i_can_store_credit_cardccv_numbers'>Myth 8: I Can Store Credit Card/CCV Numbers</h3>
+
+<p>Storing the 3-4 digit security code is never allowed under any circumstances. Storing the full credit card number at the Drupal layer is extremely risky and should not be done without a considerable amount of attention.</p>
+
+<h3 id='myth_9_i_can_set_it_and_forget_it'>Myth 9: I can set it and forget it.</h3>
+
+<p>PCI compliance is not a single event that is checked off a list and never revisited. Rather, it’s a continually changing state. If a security exploit is discovered and disclosed for Drupal or the OS running the server Drupal is hosted on, then your site is not PCI compliant. Therefore PCI compliance is a continual process that needs to be maintained through vigilance.</p>
+
+<h3 id='myth_10_pci_compliance_doesnt_apply_to_me_because_i_only_sell_a_few_items_a_month'>Myth 10: PCI Compliance Doesn&#8217;t Apply to Me Because I Only Sell a Few Items a Month.</h3>
+
+<p>Compliance begins at transaction zero (i.e. the moment you turn on your cart to begin accepting payments).</p>
+
+<h3 id='myth_11_compliance_is_optional'>Myth 11: Compliance is Optional.</h3>
+
+<p>While it&#8217;s true that filling out the self-assessment questionnaire may be optional depending on the transaction volume, compliance itself is not optional. It is a contractual obligation that you must meet in order for the privilege us accepting credit card payments through a merchant account. Be sure to read the fine print!</p>
+
+<h3 id='myth_12_ignorance_is_bliss'>Myth 12: Ignorance is Bliss.</h3>
+
+<p>While it is possible to operate an eCommerce site for many years without a single issue, the risks that one places on their business are huge. One can experience heavy fines, a public relations nightmare, and the loss of the ability to accept payments in the future.</p>
+
+<p>The best course of action is to get informed. There are solutions out there, particularly shared-management gateways, that can significantly reduce the risk of experiencing a breach and reduce the time, effort, and resources required to become compliant.</p>
+
+<h3 id='get_the_paper'>Get the Paper</h3>
+
+<p>If you found this useful, we highly encourage you to download the full white paper, read it, and follow-up with any questions or feedback. Thanks for your time and attention on this important subject matter!</p>
+
+<h3 id='references'>References</h3>
+
+<ol>
+<li>&#32;<a name='cite-1' /><a href='http://goo.gl/JNHNNs'>Drupal PCI Compliance White Paper: Official Homepage</a></li>
+
+<li>&#32;<a name='cite-2' /><a href='http://goo.gl/ER3w3l'>Cyberattacks on the rise as credit, debit card numbers become commodities</a></li>
+
+<li>&#32;<a name='cite-3' /><a href='http://goo.gl/zRW9g0'>Rackspace: PCI Frequently Asked Questions</a></li>
+
+<li>&#32;<a name='cite-4' /><a href='http://goo.gl/n5n4lu'>Amazon: PCI DSS Level 1 Compliance</a></li>
+
+<li>&#32;<a name='cite-5' /> <a href='http://goo.gl/Nqc25M'>Information Supplement: PCI DSS E-commerce Guidelines</a></li>
+</ol>
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+  var disqus_shortname = 'drupalpcicompliance'; // required: replace example with your forum shortname
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+      </section>
+    </div>        
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">
+          The <em>Drupal PCI Compliance White Paper</em> is licensed under a <a href="http://creativecommons.org/licenses/by-nd/3.0/us/">Creative Commons Attribution No Derivatives license</a>. For attribution you must link to this site. <a href="/news/2013/06/21/why-we-chose-creative-commons-attribution-no-derivatives-for-the-license/">Why?</a>
+        </p>
+        <p>
+          DrupalPCICompliance is maintained by <a href="https://github.com/rickmanelius">rickmanelius</a>.
+        </p> 
+        <p>
+          Drupal is a <a href="http://drupal.com/trademark">registered trademark</a> of <a href="http://buytaert.net">Dries Buytaert</a>.
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>

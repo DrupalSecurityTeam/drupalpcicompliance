@@ -1,4 +1,5 @@
 ---
+title: Press Release And Articles Promoting The Release Of The White Paper
 layout: post
 category: news
 author: Rick Manelius

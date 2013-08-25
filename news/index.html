@@ -5,10 +5,11 @@ title: News
 
 <h2> News </h2>
 
+
+<ul>
 {% for post in site.posts %}
  
-<a href="{{ post.url }}"><h3> {{ post.title }} </h3></a>
-
-{{ post.content }}
+<li><a href="{{ post.url }}"> {{ post.title }} </a></li>
  
 {% endfor %}
+</ul>

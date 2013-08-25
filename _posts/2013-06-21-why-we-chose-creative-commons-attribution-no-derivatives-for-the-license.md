@@ -1,4 +1,5 @@
 ---
+title: Why We Chose Creative Commons Attribution No Derivatives For The License
 layout: post
 category: news
 author: Rick Manelius
