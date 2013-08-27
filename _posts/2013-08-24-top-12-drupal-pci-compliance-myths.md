@@ -1,7 +1,7 @@
 ---
 title: Top 12 Drupal PCI Compliance Myths
 layout: post
-category: news
+category: article
 author: Rick Manelius
 tags : [Drupal, PCI compliance, security]
 ---

@@ -1,15 +1,15 @@
 ---
 layout: default
-title: News
+title: Articles
 ---
 
-<h2>News</h2>
+<h2>Articles</h2>
 
 
 <ul>
 {% for post in site.posts %}
-  {% if post.category contains 'news' %}
+  {% if post.category contains 'article' %}
   <li><a href="{{ post.url }}"> {{ post.title }} </a></li>
-  {% endif %}
+  {% endif %}  
 {% endfor %}
 </ul>
