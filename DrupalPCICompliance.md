@@ -332,7 +332,7 @@ At any stage, you also may wish to hire a professional to help expedite the proc
 
 ## Top 8 Drupal PCI Compliance Myths
 
-_Author’s Note: This is a trimmed down summary from a longer article that will be published soon._
+_Author’s Note: This is a trimmed down summary from a [longer article](http://drupalpcicompliance.org/article/2013/08/24/top-12-drupal-pci-compliance-myths/)._
 
 ### Drupal is PCI compliant.
 
