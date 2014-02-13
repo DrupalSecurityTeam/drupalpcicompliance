@@ -332,7 +332,7 @@ At any stage, you also may wish to hire a professional to help expedite the proc
 
 ## Top 8 Drupal PCI Compliance Myths
 
-_Author’s Note: This is a trimmed down summary from a longer article that will be published soon._
+_Author’s Note: This is a trimmed down summary from a longer article<sup>[16](#cite-16)</sup>._
 
 ### Drupal is PCI compliant.
 
@@ -445,6 +445,7 @@ Copperly educates businesses in the Drupal community and beyond about cost-effec
 13. <a name="cite-13"></a>[Information Supplement: PCI DSS E-commerce Guidelines](http://goo.gl/R21rw) - http://goo.gl/R21rw
 14. <a name="cite-14"></a>[Integrate Authorize.net (Hosted) CIM](http://goo.gl/rvOfz) - http://goo.gl/rvOfz
 15. <a name="cite-15"></a>[Is Cloud Sites PCI-compliant?](http://goo.gl/FjhvV) - http://goo.gl/FjhvV
+16. <a name="cite-16"></a>[Top 12 Drupal PCI Compliance Myths](http://goo.gl/phZcg1)
 
 ## Footnotes
 
