@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/rickmanelius/drupalpcicompliance.png?label=ready&title=Ready)](https://waffle.io/rickmanelius/drupalpcicompliance)
 Drupal PCI Compliance White Paper
 ===================
 
