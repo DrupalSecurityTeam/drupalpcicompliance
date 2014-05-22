@@ -18,7 +18,7 @@ This document provides a high level overview regarding Payment Card Industry Dat
 
 ## Executive Summary
 
-eCommerce volume continues to grow by double digit percentages each year<sup>[1](#cite-1)</sup> as more and more businesses are supplementing their existing revenue models and/or creating new streams <sup>[2](#cite-2),[3](#cite-3)</sup>. Simultaneously, Drupal has seen a 32% rise in the number of reported eCommerce installations in the last year across its very large installation base <sup>[4](#cite-4)</sup>.
+eCommerce volume continues to grow by double digit percentages each year<sup>[1](#cite-1)</sup> as more and more businesses are supplementing their existing revenue models and/or creating new streams <sup>[2](#cite-2),[3](#cite-3)</sup>. Simultaneously, Drupal has seen a 21% rise in the number of reported eCommerce installations in the 2013 across its very large installation base <sup>[4](#cite-4)</sup>.
 
 Drupal is an attractive eCommerce platform for many reasons: Its Open Source license eliminates one time and recurring costs to own and use, it is extremely modular and flexible, and it has a large, passionate, and world wide community that is continually contributing to and growing the platform. The Drupal community also makes a concerted effort when it comes to ensuring the platform is secure. There is a security team, weekly security advisories, venues to discuss security best practices, a collection of tools to help detect security vulnerabilities, etc.  The result is that Drupal is one of the most secure content management and eCommerce solutions available to merchants today.
 
