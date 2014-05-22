@@ -24,7 +24,7 @@ Drupal is an attractive eCommerce platform for many reasons: Its Open Source lic
 
 However, while it is possible to make a Drupal-based eCommerce environment PCI DSS compliant through proper planning, usage, and management, the mere use of Drupal by itself is _IS NOT_ sufficient to ensure the level of security necessary to become compliant. First, it’s possible to make Drupal insecure through the use of inappropriate configurations and site mismanagement. Second, Drupal is only a single component of the cardholder data environment (CDE). Hosting servers, networks, and other factors play a significant role in securing the entire end-to-end process.
 
-How and where the credit card data is processed, transmitted, and stored determines the size, complexity, and risk associated with the cardholder data environment, which directly impacts the time, resources, and expertise required to achieve and maintain compliance. Whenever possible, wholly-outsourced and shared-management implementations can make it significantly easier to complete this process. Merchant-managed solutions can quickly become cost prohibitive for all but enterprise level companies, and should be avoided unless the business needs simply require them.
+How and where the credit card data is processed, transmitted, and stored determines the size, complexity, and risk associated with the cardholder data environment, which directly impacts the time, resources, and expertise required to achieve and maintain compliance. Whenever possible, wholly-outsourced and shared-management implementations can make it easier to complete this process. Merchant-managed solutions are the most cost prohibitive for all but enterprise level companies, and should be avoided unless the business needs simply require them.
 
 Regardless of the selected approach, it’s always necessary to adhere to the complete PCI DSS standard because a single exploit can undermine a company's PCI compliance, thereby opening it up to the financial and legal liabilities associated if a breach were to occur. Finally, the standard is only becoming more stringent; therefore, what is optional today is likely to become a requirement in the near future.
 
@@ -69,6 +69,8 @@ It’s not common for one company to control the entire end-to-end process of ha
 ### Financial
 
 If you ever face a security breach and credit card information is stolen, having a proven record of your PCI compliance can protect you from the financial penalties (ranging from $25 to $215 per compromised card<sup>[6](#cite-6)</sup>). Major corporations, such as Heartland Payment Systems, have faced fines as large as $12.5 million<sup>[7](#cite-7)</sup>. Small companies are equally at risk, accounting for 80% of all instances of unauthorized access<sup>[8](#cite-8)</sup>. Finally, any company that has a reported breach on their record must undergo mandatory ROC audits, which alone can cost tens of thousands of dollars.
+
+@TODO: Update the above to address Target's drop in sales and profits both in terms of total sales and net profits http://www.cbsnews.com/news/data-breach-costs-take-toll-on-target-profit/.
 
 ### Public Relations
 
@@ -139,9 +141,15 @@ Knowing how to get started can seem overwhelming at first. Thankfully, the PCI c
 Your credit card processor and acquiring bank are required to ask you for annual SAQ forms - if they haven’t asked yet, they will soon!
 
 The key is determining which SAQ you should be filling out because they vary wildly in terms of quantity of responsibilities and the amount of time and effort it takes to complete them. SAQ A has as few as 15 items and can be completed fairly quickly. SAQ D contains over 288 items and can take months of time and millions of dollars to achieve. The following section will help you make sense of these different levels and how you can select the method that balances your business needs with your ability to achieve compliance.
-Determining Your Responsibilities
+
+@TODO: Update the SAQ control numbers in the paragraph above. http://www.pcicomplianceguide.org/new-more-a-first-look-at-the-pci-dss-3-0-saqs/. Also update the relative costs of SAQ D to hundreds of thousands to millions of dollars.
+
+### Determining Your Responsibilities
+
 The quantity and difficulty of your PCI responsibilities are a result of your merchant level (which is based on the volume of transactions) and your validation type (which is based on how you’re conducting transactions).
-Merchant Level
+
+### Merchant Level
+
 The PCI council has defined 4 levels of transaction volume (Figure 1)
 
 ![](images/figures/PCI-levels-visa-cardbrand-2013-06-10.png "A table showing the 4 levels of PCI compliance transaction volumes for VISA card brand.")
@@ -163,7 +171,9 @@ The PCI council defines 5 different validation types:
 
 *Figure 2. Breakdown of PCI types as a function of merchant’s activities.*
 
-For the purposes of a typical Drupal eCommerce site, the SAQ A, C, and D are the most relevant types<sup>[A](#footnote-A), [B](#footnote-B)</sup>. It is also extremely important to understand which type the system falls into because there is a large difference in time, effort, risk, and expense in achieving compliance.
+@TODO: Update Figure 2 to include SAQ A-EP and B-IP. Note in the caption that this breakdown is updated to meet the 3.0 standard.
+
+For the purposes of a typical Drupal eCommerce site, the SAQ A, A-EP, C, and D are the most relevant types<sup>[A](#footnote-A), [B](#footnote-B)</sup>. It is also extremely important to understand which type the system falls into because there is a large difference in time, effort, risk, and expense in achieving compliance.
 
 ![](images/figures/PCI-typical-costs-per-saq-type.png "Approximate PCI compliance costs per SAQ type. Factors include audits ($30,000-$100,000), time spent meeting each requirement, etc.")
 
