@@ -237,7 +237,7 @@ Example iframe solutions:
 * PayPal Payments Advanced (PPA)
 * PayPal Payflow Link (PFL)
 
-The common denominator in all shared-management configurations is that the checkout process begins on a CDE managed by the company, but the customer is technically sending their credit card credentials directly to the payment processor’s CDE. This occurs by redirection (HPP), loading a payment form from their servers (iframe), or posting the form directly through JavaScript or the action attribute on an HTML form (direct post).
+The common denominator in all shared-management configurations is that the checkout process begins on Drupal website (a component of the CDE) managed by the merchant, but the customer is technically sending their credit card credentials directly to the payment processor’s CDE. This occurs by redirection (HPP), loading a payment form from their servers (iframe), or posting the form directly through JavaScript or the action attribute on an HTML form (direct post).
 
 One might assume that a shared-management approach would qualify them for SAQ A. However, section 3.4.3 in the PCI DSS eCommerce Guidelines Supplement document makes it clear that SAQ C considerations are still applicable because each shared management method has vulnerabilities <sup>[13](#cite-13)</sup>. Example, a security breach on the Drupal application could be used to modify the Drupal codebase to load an iframe hosted by a server collecting credit card numbers.
 
