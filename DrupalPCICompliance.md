@@ -210,7 +210,7 @@ In a shared management approach, the credit card information never touches the s
 
 * Hosted Payment Page (HPP)
 * Direct Post
-* iFrame
+* Inline Frame (aka iframe)
 
 A HPP approach is where a user is redirected from a Drupal site to a third-party site in order to enter their payment details. If the transaction is successful, the customer is redirected back to the Drupal site with an authorization code that validates the payment was accepted.
 
