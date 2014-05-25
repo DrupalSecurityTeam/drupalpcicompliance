@@ -196,7 +196,7 @@ The PCI council defines 3 types of payment methods: Merchant-managed, Shared-man
 
 A general guideline is that if the company’s servers store, transmit, or handle cardholder data, then it’s merchant managed. An example would be customer submitting a payment directly on a Drupal site using Ubercart connected to Authorize.Net because a customer’s payment information passes through merchant’s webserver on the way to being sent to Authorize.Net.
 
-Onsite payments posted directly back to Drupal immediately fall into SAQ C. If additional features are required (such as stored credit card numbers), the CDE scope expands further to SAQ D.
+Onsite payments posted directly back to Drupal (i.e. an HTTP POST request containing the cardholder data is submitted to the Drupal application, which results in a bootstrap and the passing of the cardholder data through the form API) immediately fall into SAQ C. If additional features are required (such as stored credit card numbers), the CDE scope expands further to SAQ D.
 
 Merchant-managed examples:
 
