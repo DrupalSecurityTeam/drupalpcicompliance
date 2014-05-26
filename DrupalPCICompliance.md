@@ -321,7 +321,7 @@ While you are not necessarily the one responsible for achieving and maintaining 
 
 ## Final Message to Drupal Shops
 
-Your responsibility is to protect your business. It is up to you to be exceedingly clear with respect to who is responsible for PCI compliance before, during, and after a site launch. Any service agreements should also include language regarding each party's responsibilities as well as links to reference materials that provide clients with a means of understanding the implications of these responsibilities.
+Your responsibility is to protect your business. It is up to you to be exceedingly clear with respect to who is responsible for PCI compliance before, during, and after a site launch. Any service agreements should also include language regarding each party's PCI-DSS compliance responsibilities as well as links to reference materials that provide clients with a means of understanding the implications of these responsibilities.
 
 This conversation will ultimately lead to a greater focus on security for all delivered websites. This not only can be valuable upsell to current clients, but it can become a competitive advantage and even attract new business.
 
@@ -335,12 +335,12 @@ Your decisions about how you handle credit card data affect the livelihood of yo
 
 Getting started can seem like a daunting task. However, breaking it down into small steps can make this a very manageable process.
 
-* **Assess current setup.** Questions to ask: Do you have a site already or are you starting from scratch? Are you using Drupal Commerce or Ubercart? Are you willing to migrate between them if necessary?
+* **Assess current setup.** Questions to ask: Do you have a site already or are you starting from scratch? Are you using Drupal Commerce or Ubercart? Are you willing to migrate between them if necessary? Are you willing to outsource completely if sales and/or budgets cannot justify an alternative?
 * **Assess requirements.** Questions to ask: Which is more important: cost or features? Do you need any complex interactions or feature sets during checkout? Or can you suffice with using a PayPal button and calling it a day?
 * **Reduce CDE Scope.** Questions to ask: Is it possible to segment your network so that non-related servers are not maintained behind the same stateful firewalls as your eCommerce servers?
 * **Assess options.** Now that you know what you have to work with and what the goals are, evaluate the cost/effort/risk of 2-3 scenarios.
 * **Decide on a method.** Ultimately the business owner must ultimately pick a specific method balancing all the factors.
-* **Determine responsibilities.** Once a decision is made, it’s time to clearly articulate who is responsible for what at each stage in the development cycle. There should also be clear sign off points established.
+* **Determine responsibilities.** Once a decision is made, it’s required to clearly articulate who is responsible for what at each stage in the development cycle. There should also be clear sign off points established.
 * **Complete the relevant SAQ:** The Self-Assessment Questionnaire is your key tool for performing a gap analysis and determining whether you are currently compliant.
 * **Prioritize PCI responsibilities.** Becoming compliant can take a long time, but some responsibilities are more critical than others. The PCI industry created a document title The Prioritized Approach to Pursue PCI DSS Compliance, which gives clear guidance on what should be done first to minimize risk during the entire process.
 * **Create plan and execute.** Once you’ve identified what needs to be done and created a plan, it’s time to make consistent progress toward checking off items on the list.
@@ -353,7 +353,7 @@ _Author’s Note: This is a trimmed down summary from a longer article<sup>[16](
 
 ### Drupal is PCI compliant.
 
-This is incorrect by itself because Drupal is only one piece of the cardholder data environment (CDE). However, Drupal (when it’s up to date with all of its security patches and when it’s configured properly) can help one achieve compliance more easily through the use of various contributed modules, such as Paranoia and Security Review.
+This is incorrect by itself because Drupal is only one piece of the cardholder data environment (CDE). However, when Drupal is up to date with all of its security patches and when it’s configured properly to meet its portion of the PCI-DSS requirements, then Drupal is PCI *compatible*. PCI compliance can only be achieved at the CDE level once each component of the CDE has met all the requirements within their area of responsibility.
 
 ### Ubercart and Drupal Commerce are PCI compliant.
 
