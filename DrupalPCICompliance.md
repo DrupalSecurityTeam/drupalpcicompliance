@@ -8,7 +8,7 @@ _Authors:_
 
 v1.1 alpha
 
-May 21st, 2014
+May 26th, 2014
 
 Updated to PCI-DSS 3.0
 
