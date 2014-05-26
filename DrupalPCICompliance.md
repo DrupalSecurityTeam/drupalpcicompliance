@@ -138,9 +138,7 @@ Knowing how to get started can seem overwhelming at first. Thankfully, the PCI c
 
 Your credit card processor and acquiring bank are required to ask you for annual SAQ forms - if they haven’t asked yet, they will soon!
 
-The key is determining which SAQ you should be filling out because they vary wildly in terms of quantity of responsibilities and the amount of time and effort it takes to complete them. SAQ A has as few as 15 items and can be completed fairly quickly. SAQ D contains over 288 items and can take months of time and millions of dollars to achieve. The following section will help you make sense of these different levels and how you can select the method that balances your business needs with your ability to achieve compliance.
-
-@TODO: Update the SAQ control numbers in the paragraph above. http://www.pcicomplianceguide.org/new-more-a-first-look-at-the-pci-dss-3-0-saqs/. Also update the relative costs of SAQ D to hundreds of thousands to millions of dollars.
+The key is determining which SAQ you should be filling out because they vary wildly in terms of quantity of responsibilities and the amount of time and effort it takes to complete them. SAQ A has 14 items and can be completed fairly quickly. SAQ D-MER and SAQ D-SP contains 326 and 347 items respectively and can take months of time and millions of dollars to achieve<sup>[21](#cite-21)</sup>. The following section will help you make sense of these different levels and how you can select the method that balances your business needs with your ability to achieve compliance.
 
 ### Determining Your Responsibilities
 
@@ -467,6 +465,7 @@ Copperly educates businesses in the Drupal community and beyond about cost-effec
 18. <a name="cite-18"></a>[Version 3.0 Change Highlights](http://goo.gl/XDBzkz)
 19. <a name="cite-19"></a>[Summary of Changes from PCI DSS Version 2.0 to 3.0](http://goo.gl/7nR1Gt)
 20. <a name="cite-20"></a>[Data-breach costs take toll on Target profit](http://goo.gl/aKjIOI)
+21. <a name="cite-21"></a>[New! More! A First Look at the PCI DSS 3.0 SAQs](http://goo.gl/YnjkJZ)
 
 ## Footnotes
 
