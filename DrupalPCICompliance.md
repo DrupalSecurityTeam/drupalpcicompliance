@@ -247,9 +247,13 @@ Frustrating as this may be for those wanting to achieve PCI SAQ A, the good news
 
 In a wholly outsourced solution, everything regarding the Drupal application is hosted, managed, and under the responsibility (emphasis added) by a third-party vendor. Please note that most hosting services and Drupal vendors do not explicitly take on that responsibility, so be sure to do your due diligence and ensure that they are equally aware of the repercussions of taking on that responsibility. If the third-party vendor does take on that responsibility, you may be eligible for completing SAQ A<sup>[D](#footnote-D)</sup>.
 
-### Version 2.0 Disclaimer
+### Version 3.0 Disclaimer
 
-It is important to note that the information contained in this paper applies only to version 2.0 of the PCI standard. The 3.0 standard (due out as early as Fall 2013) is likely to make it more explicit for all shared management solutions to require SAQ C, and the SAQ C standard itself may become more stringent. Therefore it is highly recommended to adhere to SAQ C unless in a wholly outsourced environment.
+Version 3.0 eliminated much of the confusion that existed in version 2.0 with respect to selecting the appropriate SAQ form for each shared management solution. Previously, one could formulate a strong argument for SAQ A, SAQ C, or some arbitrary hybrid of the two. And given the large difference in the implications for each SAQ type (see Figure 2), it was difficult to confidently make a final determination about each of these shared management solutions. SAQ A-EP not only introduced a middle ground, but the requirements for SAQ A and SAQ A-EP made it clear with respect to which solution was appropriate for each—iframe methods are compatible with SAQ A while direct post and hosted payment page methods are not. 
+
+The decision to allow iframe solutions into SAQ A is not without controversy because the one can still make the case that a breach of the Drupal application layer can compromise the delivery of the iframe. Therefore, while the final recommendations of this paper are to use iframe solutions in order to fall within scope of SAQ A, it is also recommended to always comply with SAQ A-EP (at a minimum) for security reasons and to future proof your Drupal site against the next versions of the PCI-DSS standard.
+
+There are other important changes introduced in the 3.0 standard, such as the requirement to have all components of the CDE documented with an explicit determination of responsibility for each component. For a full list of changes, please see the _Version 3.0 Change Highlights_ and _Summary of Changes from PCI DSS Version 2.0 to 3.0_ documents<sup>[18](#cite-18),[19](#cite-19)</sup>.
 
 ## Selecting the Appropriate Method
 
@@ -459,6 +463,8 @@ Copperly educates businesses in the Drupal community and beyond about cost-effec
 15. <a name="cite-15"></a>[Is Cloud Sites PCI-compliant?](http://goo.gl/FjhvV) - http://goo.gl/FjhvV
 16. <a name="cite-16"></a>[Top 12 Drupal PCI Compliance Myths](http://goo.gl/phZcg1)
 17. <a name="cite-17"></a>[Understanding the SAQs for PCI DSS v3.0](http://goo.gl/V8ZrVF)
+18. <a name="cite-18"></a>[Version 3.0 Change Highlights](http://goo.gl/XDBzkz)
+19. <a name="cite-19"></a>[Summary of Changes from PCI DSS Version 2.0 to 3.0 ](http://goo.gl/7nR1Gt)
 
 ## Footnotes
 
