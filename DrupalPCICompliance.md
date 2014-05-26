@@ -498,4 +498,4 @@ The authors are not lawyers and the contents of this document do not constitute 
 
 ### License
 
-This document is Copyright 2013 Rick Manelius, Greg Knaddison, and Ned McClain—CreativeCommons Attribution-No Derivative Works 3.0 Unported http://creativecommons.org/licenses/by-nd/3.0 http://drupalpcicompliance.org/. You may share and re-post the PDF on other sites without modification as long as you clearly link to http://drupalpcicompliance.org/.
+This document is Copyright 2013-2014 Rick Manelius, Greg Knaddison, and Ned McClain—CreativeCommons Attribution-No Derivative Works 3.0 Unported http://creativecommons.org/licenses/by-nd/3.0 http://drupalpcicompliance.org/. You may share and re-post the PDF on other sites without modification as long as you clearly link to http://drupalpcicompliance.org/.
