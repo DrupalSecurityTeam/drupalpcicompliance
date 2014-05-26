@@ -257,11 +257,11 @@ There are other important changes introduced in the 3.0 standard, such as the re
 
 ## Selecting the Appropriate Method
 
-SAQ A is obviously desirable (and recommended) because of its low risk, time, and cost to implement. However, a company’s business needs may require a solution that is more customizable and that may rule out a wholly outsourced or even shared management solution.
+SAQ A is obviously desirable (and recommended) because of its lower risk, time, and cost to implement. However, a company’s business needs may require a solution that is more customizable and that may rule out a wholly outsourced or even shared management solution.
 
 ### Example: Recurring Payments for Ubercart on Drupal 7
 
-As of the time of this writing, there is no wholly-outsourced or shared-management solution for a Drupal 7 website using Ubercart with a recurring billing requirement. To store a customer’s credit card information directly on Authorize.Net’s servers, one must use the included Ubercart Authorize.Net module and enable the customer information manager (CIM) option. Unfortunately, the way Ubercart implements CIM  requires the credit card information to pass through the Drupal application. Therefore this is a Merchant-managed solution, which requires one to adhere to every control item in SAQ C.
+As of June 2014, there is no wholly-outsourced or shared-management solution for a Drupal 7 website using Ubercart with a recurring billing requirement. To store a customer’s credit card information directly on Authorize.Net’s servers, one must use the included Ubercart Authorize.Net module and enable the customer information manager (CIM) option. Unfortunately, the way Ubercart implements CIM  requires the credit card information to pass through the Drupal application. Therefore this is a Merchant-managed solution, which requires one to adhere to every control item in SAQ C.
 
 _Authors Note: payment processors like Authorize.Net have the ability to use third-party iframes to integrate with their CIM service. However, the Ubercart community is unlikely to add that feature into its code base<sup>[14](#cite-14)</sup>._
 
