@@ -373,11 +373,13 @@ This is false because modifying code at the Drupal application layer can result 
 
 ### I can achieve PCI compliance using shared hosting.
 
-Shared hosting is simply not secure enough for PCI SAQ C because there are simply too many users (both customers and employees of the hosting company) that have access to the server and you simply do not have enough control in locking down the system.
+Shared hosting is simply not secure enough for PCI SAQ A-EP, C, or D because there are simply too many users (both customers and employees of the hosting company) that have access to the server and you simply do not have enough control in locking down the system. Technically an iframe solution (SAQ A compatible) could get by on shared hosting, but we strongly recommend against it.
 
 ### I can achieve PCI compliance using cloud hosting.
 
-Even reputable companies like Rackspace make it very clear that you must use their managed, non-cloud based servers because their cloud based offerings have not been certified to adhere to the requirements necessary to achieve PCI Level 1 compliance at the hardware level<sup>[15](#cite-15)</sup>. The only major cloud hosting company that offers this is AWS. In all cases you must us a PCI DSS certified service provider if you are outsourcing hosting for eCommerce servers.
+As of May 2014, we are seeing a growing number of reputable hosting providers introducing PCI compliant cloud hosting options. However, you must do your due diligence before immediately accepting their claims. As part of the version 3.0 standard, each party must explicitly agree to the particular sections of the standard that they assume responsibility. Not only should the cloud hosting provider explicitly state that their solution is PCI compliant and they will assume the responsibilities within their jurisdiction, but the cloud hosting provider should also be able to provide documentation (upon request) to validate their claims.
+
+In all cases you must us a PCI DSS certified service provider if you are outsourcing hosting for eCommerce servers.
 
 ### I can set it and forget it.
 
