@@ -68,9 +68,7 @@ It’s not common for one company to control the entire end-to-end process of ha
 
 ### Financial
 
-If you ever face a security breach and credit card information is stolen, having a proven record of your PCI compliance can protect you from the financial penalties (ranging from $25 to $215 per compromised card<sup>[6](#cite-6)</sup>). Major corporations, such as Heartland Payment Systems, have faced fines as large as $12.5 million<sup>[7](#cite-7)</sup>. Small companies are equally at risk, accounting for 80% of all instances of unauthorized access<sup>[8](#cite-8)</sup>. Finally, any company that has a reported breach on their record must undergo mandatory ROC audits, which alone can cost tens of thousands of dollars.
-
-@TODO: Update the above to address Target's drop in sales and profits both in terms of total sales and net profits http://www.cbsnews.com/news/data-breach-costs-take-toll-on-target-profit/.
+If you ever face a security breach and credit card information is stolen, having a proven record of your PCI compliance can protect you from the financial penalties (ranging from $25 to $215 per compromised card<sup>[6](#cite-6)</sup>). Major corporations, such as Heartland Payment Systems, have faced fines as large as $12.5 million<sup>[7](#cite-7)</sup>. Target attributed a portion of its 5.3% loss in sales and a 46% drop in profit during the 4th quarter of 2013 to its security breach in 2013, which resulted in 40 million compromised credit card records<sup>[20](#cite-20)</sup>. Small companies are equally at risk, accounting for 80% of all instances of unauthorized access<sup>[8](#cite-8)</sup>. Finally, any company that has a reported breach on their record must undergo mandatory ROC audits, which alone can cost tens of thousands of dollars.
 
 ### Public Relations
 
@@ -467,7 +465,8 @@ Copperly educates businesses in the Drupal community and beyond about cost-effec
 16. <a name="cite-16"></a>[Top 12 Drupal PCI Compliance Myths](http://goo.gl/phZcg1)
 17. <a name="cite-17"></a>[Understanding the SAQs for PCI DSS v3.0](http://goo.gl/V8ZrVF)
 18. <a name="cite-18"></a>[Version 3.0 Change Highlights](http://goo.gl/XDBzkz)
-19. <a name="cite-19"></a>[Summary of Changes from PCI DSS Version 2.0 to 3.0 ](http://goo.gl/7nR1Gt)
+19. <a name="cite-19"></a>[Summary of Changes from PCI DSS Version 2.0 to 3.0](http://goo.gl/7nR1Gt)
+20. <a name="cite-20"></a>[Data-breach costs take toll on Target profit](http://goo.gl/aKjIOI)
 
 ## Footnotes
 
