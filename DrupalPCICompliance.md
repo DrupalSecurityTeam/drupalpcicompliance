@@ -161,13 +161,11 @@ There are a few important points to emphasize for the Visa card brand:
 
 ### Validation Type
 
-The PCI council defines 5 different validation types:
+The PCI council defines 8 different validation types:
 
 ![](images/figures/PCI-saq-breakdown.png "Breakdown of PCI types as a function of merchant’s activities.")
 
-*Figure 2. Breakdown of PCI types as a function of merchant’s activities.*
-
-@TODO: Update Figure 2 to include SAQ A-EP and B-IP. Note in the caption that this breakdown is updated to meet the 3.0 standard.
+*Figure 2. Breakdown of PCI-DSS version 3.0 SAQ types as a function of merchant activities.*
 
 For the purposes of a typical Drupal eCommerce site, the SAQ A, A-EP, C, and D are the most relevant types<sup>[A](#footnote-A), [B](#footnote-B)</sup>. It is also extremely important to understand which type the system falls into because there is a large difference in time, effort, risk, and expense in achieving compliance.
 
@@ -469,7 +467,7 @@ Copperly educates businesses in the Drupal community and beyond about cost-effec
 
 ## Footnotes
 
-* <a name="footnote-A"></a>A. If you qualify as a service provider (SP), you must be SAQ-D-compliant and you must undergo a full ROC audit by a qualified QSA. Basically, services providers are treated the same as being Level 1, no matter how small of a hosting shop you are.
+* <a name="footnote-A"></a>A. If you qualify as a service provider (SP), you must be SAQ D-SP compliant and you must undergo a full ROC audit by a qualified QSA. Basically, services providers are treated the same as being Level 1, no matter how small of a hosting shop you are.
 * <a name="footnote-B"></a>B. Be advised that a simple matter of handing transactions via fax, terminal, email, etc. in addition to your Drupal site can and often will increase your CDE scope.
 * <a name="footnote-C"></a>C. It should be noted that the stigma against hosted payment pages continues to fade away as it becomes a more common and accepted form of transaction, particularly in the EU.
 * <a name="footnote-D"></a>D. Visit [http://www.visa.com/splisting](http://www.visa.com/splisting) to confirm whether or not a vendor is a valid Service Provider.
