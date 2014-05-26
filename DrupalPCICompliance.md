@@ -241,7 +241,7 @@ The common denominator in all shared-management configurations is that the check
 
 One might assume that a shared-management approach would qualify them for SAQ A. However, section 3.4.3 in the _PCI DSS eCommerce Guidelines Supplement_ document makes it clear that each shared management method has vulnerabilities <sup>[13](#cite-13)</sup>, which are described in more detail below. Furthermore, _Understanding the SAQs for PCI DSS v3.0_ (in addition to the SAQ A and SAQ A-EP v3.0 forms) specifically states that Direct Post and Hosted Payment Page solutions cannot qualify for SAQ A and must use SAQ A-EP<sup>[17](#cite-17)</sup>.
 
-Frustrating as this may be for those wanting to achieve PCI SAQ A, the good news is that using a shared management system still makes it significantly easier and faster to obtain compliance in SAQ C because a significant amount of the responsibility can still be considered outsourced.
+Frustrating as this may be for those wanting to achieve PCI SAQ A, the good news is that using a direct post or hosted payment page solution can still qualify as SAQ A-EP, which is significantly easier to achieve in comparison to SAQ C or SAQ D because a significant amount of the responsibility can still be considered outsourced.
 
 ### Wholly Outsourced
 
