@@ -239,9 +239,7 @@ Example iframe solutions:
 
 The common denominator in all shared-management configurations is that the checkout process begins on Drupal website (a component of the CDE) managed by the merchant, but the customer is technically sending their credit card credentials directly to the payment processor’s CDE. This occurs by redirection (HPP), loading a payment form from their servers (iframe), or posting the form directly through JavaScript or the action attribute on an HTML form (direct post).
 
-One might assume that a shared-management approach would qualify them for SAQ A. However, section 3.4.3 in the _PCI DSS eCommerce Guidelines Supplement_ document makes it clear that each shared management method has vulnerabilities <sup>[13](#cite-13)</sup>, which are described in more detail below. Furthermore, _Understanding the SAQs for PCI DSS v3.0_ specifically states that Direct Post and Hosted Payment Page solutions cannot qualify for SAQ A and must use SAQ A-EP.
-
-@TODO: Insert citation/link for _Understanding the SAQs for PCI DSS v3.0_.
+One might assume that a shared-management approach would qualify them for SAQ A. However, section 3.4.3 in the _PCI DSS eCommerce Guidelines Supplement_ document makes it clear that each shared management method has vulnerabilities <sup>[13](#cite-13)</sup>, which are described in more detail below. Furthermore, _Understanding the SAQs for PCI DSS v3.0_ (in addition to the SAQ A and SAQ A-EP v3.0 forms) specifically states that Direct Post and Hosted Payment Page solutions cannot qualify for SAQ A and must use SAQ A-EP<sup>[17](#cite-17)</sup>.
 
 Frustrating as this may be for those wanting to achieve PCI SAQ A, the good news is that using a shared management system still makes it significantly easier and faster to obtain compliance in SAQ C because a significant amount of the responsibility can still be considered outsourced.
 
@@ -460,6 +458,7 @@ Copperly educates businesses in the Drupal community and beyond about cost-effec
 14. <a name="cite-14"></a>[Integrate Authorize.net (Hosted) CIM](http://goo.gl/rvOfz) - http://goo.gl/rvOfz
 15. <a name="cite-15"></a>[Is Cloud Sites PCI-compliant?](http://goo.gl/FjhvV) - http://goo.gl/FjhvV
 16. <a name="cite-16"></a>[Top 12 Drupal PCI Compliance Myths](http://goo.gl/phZcg1)
+17. <a name="cite-17"></a>[Understanding the SAQs for PCI DSS v3.0](http://goo.gl/V8ZrVF)
 
 ## Footnotes
 
