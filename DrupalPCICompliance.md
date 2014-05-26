@@ -306,6 +306,7 @@ This is a non-exhaustive list of ways in which you can harden security at the Dr
 * **Removing credentials from settings.php.** One can include a settings.local.php file within settings.php to ensure that sensitive information is not distributed.
 * **Security Updates.** Always keep up with the Drupal Security Advisories, which are released every Wednesday.
 * **Paranoia and Security Review Modules.** The modules provide and review your Drupal configurations to ensure they adhere to best security practices.
+* **Security Kit Module.** This module provides Drupal with various security hardening options. This lets your mitigate the risks of exploitation of different web application vulnerabilities.
 * **Holistic approach to compliance.** Consider PCI DSS compliance as part of the bigger picture of your organization’s compliance requirements.  Often organizations will have overlapping compliance requirements from standards such as NIST 800-53, ISO27002, HIPAA, etc.
 
 ## Drupal’s Security Team
