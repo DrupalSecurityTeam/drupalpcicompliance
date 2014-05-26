@@ -138,7 +138,7 @@ Knowing how to get started can seem overwhelming at first. Thankfully, the PCI c
 
 Your credit card processor and acquiring bank are required to ask you for annual SAQ forms - if they haven’t asked yet, they will soon!
 
-The key is determining which SAQ you should be filling out because they vary wildly in terms of quantity of responsibilities and the amount of time and effort it takes to complete them. SAQ A has 14 items and can be completed fairly quickly. SAQ D-MER and SAQ D-SP contains 326 and 347 items respectively and can take months of time and millions of dollars to achieve<sup>[21](#cite-21)</sup>. The following section will help you make sense of these different levels and how you can select the method that balances your business needs with your ability to achieve compliance.
+The key is determining which SAQ you should be filling out because they vary wildly in terms of quantity of responsibilities and the amount of time and effort it takes to complete them. SAQ A has 14 items and can be completed fairly quickly. SAQ D contains between 326 and 347 items and can take months of time and millions of dollars to achieve<sup>[21](#cite-21)</sup>. The following section will help you make sense of these different levels and how you can select the method that balances your business needs with your ability to achieve compliance.
 
 ### Determining Your Responsibilities
 
