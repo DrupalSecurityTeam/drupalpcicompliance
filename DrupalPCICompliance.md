@@ -20,7 +20,7 @@ This document provides a high level overview regarding Payment Card Industry Dat
 
 eCommerce volume continues to grow by double digit percentages each year<sup>[1](#cite-1)</sup> as more and more businesses are supplementing their existing revenue models and/or creating new streams <sup>[2](#cite-2),[3](#cite-3)</sup>. Simultaneously, Drupal has seen a 21% rise in the number of reported eCommerce installations in 2013 across its very large installation base <sup>[4](#cite-4)</sup>.
 
-Drupal is an attractive eCommerce platform for many reasons: Its Open Source license eliminates one time and recurring costs to own and use, it is extremely modular and flexible, and it has a large, passionate, and world wide community that is continually contributing to and growing the platform. The Drupal community also makes a concerted effort when it comes to ensuring the platform is secure. There is a security team, weekly security advisories, venues to discuss security best practices, a collection of tools to help detect security vulnerabilities, etc.  The result is that Drupal is one of the most secure content management and eCommerce solutions available to merchants today.
+Drupal is an attractive eCommerce platform for many reasons: Its Open Source license eliminates one time and recurring costs to own and use, it is extremely modular and flexible, and it has a large, passionate, and world wide community that is continually contributing to and growing the platform. The Drupal community also makes a concerted effort when it comes to ensuring the platform is secure. There is a security team, weekly security advisories, venues to discuss security best practices, a collection of tools to help detect security vulnerabilities, etc. The result is that Drupal is one of the most secure content management and eCommerce solutions available to merchants today.
 
 However, while it is possible to make a Drupal-based eCommerce environment PCI DSS compliant through proper planning, usage, and management, the mere use of Drupal by itself is _IS NOT_ sufficient to ensure the level of security necessary to become compliant. First, it’s possible to make Drupal insecure through the use of inappropriate configurations and site mismanagement. Second, Drupal is only a single component of the cardholder data environment (CDE). Hosting servers, networks, and other factors play a significant role in securing the entire end-to-end process.
 
@@ -106,7 +106,7 @@ If malware is installed on a server running Drupal, it can be difficult or impos
 
 ### Requirement 6. Develop and maintain secure systems and applications
 
-It’s simply not enough to “set it and forget it” when it comes to all components of the CDE. A single discovered vulnerability at the network, server, and/or Drupal app layer has the potential for exploitation.  Drupal security advisories are posted every Wednesday and should be watched regularly for any updates affecting Drupal core and/or contributed modules.  Likewise, critical Operating System and support software (Apache, PHP, MySQL, etc.) patches must be applied within 30 days of release.
+It’s simply not enough to “set it and forget it” when it comes to all components of the CDE. A single discovered vulnerability at the network, server, and/or Drupal app layer has the potential for exploitation. Drupal security advisories are posted every Wednesday and should be watched regularly for any updates affecting Drupal core and/or contributed modules. Likewise, critical Operating System and support software (Apache, PHP, MySQL, etc.) patches must be applied within 30 days of release.
 
 ### Requirement 7. Restrict access to cardholder data by business need-to-know
 
@@ -114,7 +114,7 @@ This requirement impacts not only application design, but also account and serve
 
 ### Requirement 8. Assign a unique ID to each person with computer access
 
-Sharing usernames and passwords leaves less detail for actions occurring for each individual user. It also generally leads to other bad practices, such as creating weak passwords and sharing them over insecure channels like email.  Never share your “user 1” or root login information between staff.
+Sharing usernames and passwords leaves less detail for actions occurring for each individual user. It also generally leads to other bad practices, such as creating weak passwords and sharing them over insecure channels like email. Never share your “user 1” or root login information between staff.
 
 ### Requirement 9. Restrict physical access to cardholder data
 
@@ -150,7 +150,7 @@ The PCI council has defined 4 levels of transaction volume (Figure 1)
 
 ![](images/figures/PCI-levels-visa-cardbrand-2013-06-10.png "A table showing the 4 levels of PCI compliance transaction volumes for VISA card brand.")
 
-*Figure 1. The 4 levels of transaction volumes for VISA card brand. Other card brands (e.g. MasterCard, American Express, etc.) have different reporting and validation requirements. Image Source  http://usa.visa.com/merchants/risk_management/cisp_merchants.html*
+*Figure 1. The 4 levels of transaction volumes for VISA card brand. Other card brands (e.g. MasterCard, American Express, etc.) have different reporting and validation requirements. Image Source http://usa.visa.com/merchants/risk_management/cisp_merchants.html*
 
 There are a few important points to emphasize for the Visa card brand:
 
@@ -255,7 +255,7 @@ SAQ A is obviously desirable (and recommended) because of its lower risk, time, 
 
 ### Example: Recurring Payments for Ubercart on Drupal 7
 
-As of June 2014, there is no wholly-outsourced or shared-management solution for a Drupal 7 website using Ubercart with a recurring billing requirement. To store a customer’s credit card information directly on Authorize.Net’s servers, one must use the included Ubercart Authorize.Net module and enable the customer information manager (CIM) option. Unfortunately, the way Ubercart implements CIM  requires the credit card information to pass through the Drupal application. Therefore this is a Merchant-managed solution, which requires one to adhere to every control item in SAQ C.
+As of June 2014, there is no wholly-outsourced or shared-management solution for a Drupal 7 website using Ubercart with a recurring billing requirement. To store a customer’s credit card information directly on Authorize.Net’s servers, one must use the included Ubercart Authorize.Net module and enable the customer information manager (CIM) option. Unfortunately, the way Ubercart implements CIM requires the credit card information to pass through the Drupal application. Therefore this is a Merchant-managed solution, which requires one to adhere to every control item in SAQ C.
 
 _Authors Note: payment processors like Authorize.Net have the ability to use third-party iframes to integrate with their CIM service. However, the Ubercart community is unlikely to add that feature into its code base<sup>[14](#cite-14)</sup>._
 
@@ -301,7 +301,7 @@ This is a non-exhaustive list of ways in which you can harden security at the Dr
 * **Security Updates.** Always keep up with the Drupal Security Advisories, which are released every Wednesday.
 * **Paranoia and Security Review Modules.** The modules provide and review your Drupal configurations to ensure they adhere to best security practices.
 * **Security Kit Module.** This module provides Drupal with various security hardening options. This lets your mitigate the risks of exploitation of different web application vulnerabilities.
-* **Holistic approach to compliance.** Consider PCI DSS compliance as part of the bigger picture of your organization’s compliance requirements.  Often organizations will have overlapping compliance requirements from standards such as NIST 800-53, ISO27002, HIPAA, etc.
+* **Holistic approach to compliance.** Consider PCI DSS compliance as part of the bigger picture of your organization’s compliance requirements. Often organizations will have overlapping compliance requirements from standards such as NIST 800-53, ISO27002, HIPAA, etc.
 
 ## Drupal’s Security Team
 
@@ -421,7 +421,7 @@ Commerce Guys is the software company behind Drupal Commerce, the eCommerce solu
 
 ![](images/sponsors/logo-newmedia.png "NEWMEDIA")
 
-We love web design, whatever you call it nowadays.  UI/UX, interface design, you name it.  Our clients are not just in Denver, CO, but also all over the USA; many are even overseas.  We don't just make websites look pretty, though; we develop complicated websites in-house as well.  Yes, we may well be the most established provider of Drupal web development services in Colorado.
+We love web design, whatever you call it nowadays. UI/UX, interface design, you name it. Our clients are not just in Denver, CO, but also all over the USA; many are even overseas. We don't just make websites look pretty, though; we develop complicated websites in-house as well. Yes, we may well be the most established provider of Drupal web development services in Colorado.
 
 [http://www.newmediadenver.com](http://www.newmediadenver.com)
 
