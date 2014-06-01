@@ -206,7 +206,7 @@ In a shared-management approach, the credit card information never touches the s
 * Direct Post
 * Inline Frame (iframe)
 
-A HPP approach is where a user is redirected from a Drupal site to a third-party site in order to enter their payment details. If the transaction is successful, the customer is redirected back to the Drupal site with a one time authorization code or "token" that is then used by Drupal to immediately communicate with the HPP's API to validate the payment.
+A HPP approach is where a user is redirected from a Drupal site to a third-party site in order to enter their payment details. If the transaction is successful, the customer is redirected back to the Drupal site with the payment authorization details. Depending on the specific payment gateway's security requirements, these payment authorization details may get sent back to the payment gateway's API to further validate the payment.
 
 Example HPP solutions:
 
@@ -214,7 +214,7 @@ Example HPP solutions:
 * PayPal Payments Standard (PPS)
 * PayPal Express Checkout (EC)
 
-A direct post approach is where the customer remains on the website, but the payment form is submitted directly from the customer’s browser to the payment gateway and a response is sent directly back to the customer with a one time authentication code or "token" that is then used by Drupal to immediately communicate with the HPP's API to validate the payment.
+A direct post approach is where the customer remains on the website, but the payment form is submitted directly from the customer’s browser to the payment gateway and a response is sent directly back to the customer with a one time authentication code or "token" that is then used by Drupal to immediately communicate with the payment gateway's API to validate the payment.
 
 Example direct post solutions:
 
