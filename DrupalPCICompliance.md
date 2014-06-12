@@ -42,6 +42,7 @@ The following terms are used extensively throughout this document and are provid
 * **PCI:** Acronym for “Payment Card Industry.”
 * **ROC:** Acronym for “Report on Compliance,” which contains details documenting an entity’s compliance status with the PCI DSS.
 * **SAQ:** Acronym for “Self-Assessment Questionnaire,” a checklist that you must complete and adhere to in order to obtain and maintain PCI compliance.
+* **SSC:** Acronym for “Security Standards Council,” it is the governing organization and open forum responsible for the development, management, education, and awareness of PCI Security Standards.
 
 A full list of definitions can be found in the PCI document titled _Glossary of Terms, Abbreviations, and Acronyms_ <sup>[5](#cite-5)</sup>.
 
