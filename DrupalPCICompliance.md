@@ -97,7 +97,7 @@ This should be obvious, but any component of your system that has a known defaul
 
 ### Requirement 3. Protect Stored Data
 
-Ideally credit cards are not being stored on a Drupal website at all. If they are stored, they must be encrypted in such a manner that anything with access to the database, server, or network cannot decode the information in a manner that is not intended. Achieving this is non-trivial and should only be attempted after gaining close familiarity with the PCI SAQ D standard (see the section _Self-Assessment Questionnaire_ for definitions of the SAQ validation types).
+Ideally credit cards are not being stored on a Drupal website at all. If they are stored, they must be encrypted (e.g. using a hardware security module or an encryption key management solution) in such a manner that anything with access to the database, server, or network cannot decode the information in a manner that is not intended. Achieving this is non-trivial and should only be attempted after gaining close familiarity with the PCI SAQ D standard (see the section _Self-Assessment Questionnaire_ for definitions of the SAQ validation types).
 
 ### Requirement 4. Encrypt transmission of cardholder data across open, public networks
 
