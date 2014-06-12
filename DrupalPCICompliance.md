@@ -34,7 +34,7 @@ The following terms are used extensively throughout this document and are provid
 
 * **ASV:** Acronym for “Approved Scanning Vendor.” Company approved by the PCI SSC to conduct external vulnerability scanning services.
 * **Cardholder Data:** At a minimum, cardholder data consists of the full PAN (primary account number). Cardholder data may also appear in the form of the full PAN plus any of the following: cardholder name, expiration date and/or service code
-* **Cardholder Data Environment:** The people, processes and technology that store, process or transmit cardholder data or sensitive authentication data, including any connected system components.
+* **CDE:** Acronym for “cardholder data environment.” The people, processes and technology that store, process or transmit cardholder data or sensitive authentication data, including any connected system components.
 * **Credit Cards:** The term "credit cards" is used in this paper for brevity, but the advice also applies to any debit or prepaid "payment cards."
 * **DSS:** Acronym for “Data Security Standard” and also referred to as “PCI DSS.”
 * **QSA:** Acronym for “Qualified Security Assessor,” company approved by the PCI SSC to conduct PCI DSS on-site assessments.
