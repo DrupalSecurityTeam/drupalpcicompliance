@@ -33,9 +33,9 @@
 
 <h2>Executive Summary</h2>
 
-<p>eCommerce volume continues to grow by double digit percentages each year<sup><a href="#cite-1">1</a></sup> as more and more businesses are supplementing their existing revenue models and/or creating new streams <sup><a href="#cite-2">2</a>,<a href="#cite-3">3</a></sup>. Simultaneously, Drupal has seen a 21% rise in the number of reported eCommerce installations in the 2013 across its very large installation base <sup><a href="#cite-4">4</a></sup>.</p>
+<p>eCommerce volume continues to grow by double digit percentages each year<sup><a href="#cite-1">1</a></sup> as more and more businesses are supplementing their existing revenue models and/or creating new streams <sup><a href="#cite-2">2</a>,<a href="#cite-3">3</a></sup>. Simultaneously, Drupal has seen a 21% rise in the number of reported eCommerce installations in 2013 across its very large installation base <sup><a href="#cite-4">4</a></sup>.</p>
 
-<p>Drupal is an attractive eCommerce platform for many reasons: Its Open Source license eliminates one time and recurring costs to own and use, it is extremely modular and flexible, and it has a large, passionate, and world wide community that is continually contributing to and growing the platform. The Drupal community also makes a concerted effort when it comes to ensuring the platform is secure. There is a security team, weekly security advisories, venues to discuss security best practices, a collection of tools to help detect security vulnerabilities, etc.  The result is that Drupal is one of the most secure content management and eCommerce solutions available to merchants today.</p>
+<p>Drupal is an attractive eCommerce platform for many reasons: Its Open Source license eliminates one time and recurring costs to own and use, it is extremely modular and flexible, and it has a large, passionate, and world wide community that is continually contributing to and growing the platform. The Drupal community also makes a concerted effort when it comes to ensuring the platform is secure. There is a security team, weekly security advisories, venues to discuss security best practices, a collection of tools to help detect security vulnerabilities, etc. The result is that Drupal is one of the most secure content management and eCommerce solutions available to merchants today.</p>
 
 <p>However, while it is possible to make a Drupal-based eCommerce environment PCI DSS compliant through proper planning, usage, and management, the mere use of Drupal by itself is <em>IS NOT</em> sufficient to ensure the level of security necessary to become compliant. First, it’s possible to make Drupal insecure through the use of inappropriate configurations and site mismanagement. Second, Drupal is only a single component of the cardholder data environment (CDE). Hosting servers, networks, and other factors play a significant role in securing the entire end-to-end process.</p>
 
@@ -50,12 +50,15 @@
 <ul>
 <li><strong>ASV:</strong> Acronym for “Approved Scanning Vendor.” Company approved by the PCI SSC to conduct external vulnerability scanning services.</li>
 <li><strong>Cardholder Data:</strong> At a minimum, cardholder data consists of the full PAN (primary account number). Cardholder data may also appear in the form of the full PAN plus any of the following: cardholder name, expiration date and/or service code</li>
-<li><strong>Cardholder Data Environment:</strong> The people, processes and technology that store, process or transmit cardholder data or sensitive authentication data, including any connected system components.</li>
+<li><strong>CDE:</strong> Acronym for “cardholder data environment.” The people, processes and technology that store, process or transmit cardholder data or sensitive authentication data, including any connected system components.</li>
+<li><strong>Credit Cards:</strong> The term &quot;credit cards&quot; is used in this paper for brevity, but the advice also applies to any debit or prepaid &quot;payment cards.&quot;</li>
 <li><strong>DSS:</strong> Acronym for “Data Security Standard” and also referred to as “PCI DSS.”</li>
 <li><strong>QSA:</strong> Acronym for “Qualified Security Assessor,” company approved by the PCI SSC to conduct PCI DSS on-site assessments.</li>
+<li><strong>Payment Cards:</strong> For purposes of PCI DSS, any payment card/device that bears the logo of the founding members of PCI SSC (i.e. Visa, Mastercard, etc).</li>
 <li><strong>PCI:</strong> Acronym for “Payment Card Industry.”</li>
 <li><strong>ROC:</strong> Acronym for “Report on Compliance,” which contains details documenting an entity’s compliance status with the PCI DSS.</li>
 <li><strong>SAQ:</strong> Acronym for “Self-Assessment Questionnaire,” a checklist that you must complete and adhere to in order to obtain and maintain PCI compliance.</li>
+<li><strong>SSC:</strong> Acronym for “Security Standards Council,” it is the governing organization and open forum responsible for the development, management, education, and awareness of PCI Security Standards.</li>
 </ul>
 
 <p>A full list of definitions can be found in the PCI document titled <em>Glossary of Terms, Abbreviations, and Acronyms</em> <sup><a href="#cite-5">5</a></sup>.</p>
@@ -86,7 +89,7 @@
 
 <h3>Financial</h3>
 
-<p>If you ever face a security breach and credit card information is stolen, having a proven record of your PCI compliance can protect you from the financial penalties (ranging from $25 to $215 per compromised card<sup><a href="#cite-6">6</a></sup>). Major corporations, such as Heartland Payment Systems, have faced fines as large as $12.5 million<sup><a href="#cite-7">7</a></sup>. Target attributed a portion of its 5.3% loss in sales and a 46% drop in profit during the 4th quarter of 2013 to its security breach in 2013, which resulted in 40 million compromised credit card records<sup><a href="#cite-20">20</a></sup>. Small companies are equally at risk, accounting for 80% of all instances of unauthorized access<sup><a href="#cite-8">8</a></sup>. Finally, any company that has a reported breach on their record must undergo mandatory ROC audits, which alone can cost tens of thousands of dollars.</p>
+<p>If you ever face a security breach and credit card information is stolen, having a proven record of your PCI compliance can protect you from the financial penalties (ranging from $25 to $215 per compromised card<sup><a href="#cite-6">6</a></sup>). Major corporations, such as Heartland Payment Systems, have faced fines as large as $12.5 million<sup><a href="#cite-7">7</a></sup>. Target attributed a portion of its 5.3% loss in sales and a 46% drop in profit during the 4th quarter of 2013 to its security breach in November of that year, which resulted in 40 million compromised credit card records<sup><a href="#cite-20">20</a></sup>. Small companies are equally at risk, accounting for 80% of all instances of unauthorized access<sup><a href="#cite-8">8</a></sup>. Finally, any company that has a reported breach on their record must undergo mandatory ROC audits, which alone can cost tens of thousands of dollars.</p>
 
 <h3>Public Relations</h3>
 
@@ -124,7 +127,7 @@
 
 <h3>Requirement 6. Develop and maintain secure systems and applications</h3>
 
-<p>It’s simply not enough to “set it and forget it” when it comes to all components of the CDE. A single discovered vulnerability at the network, server, and/or Drupal app layer has the potential for exploitation.  Drupal security advisories are posted every Wednesday and should be watched regularly for any updates affecting Drupal core and/or contributed modules.  Likewise, critical Operating System and support software (Apache, PHP, MySQL, etc.) patches must be applied within 30 days of release.</p>
+<p>It’s simply not enough to “set it and forget it” when it comes to all components of the CDE. A single discovered vulnerability at the network, server, and/or Drupal app layer has the potential for exploitation. Drupal security advisories are posted every Wednesday and should be watched regularly for any updates affecting Drupal core and/or contributed modules. Likewise, critical Operating System and support software (Apache, PHP, MySQL, etc.) patches must be applied within 30 days of release.</p>
 
 <h3>Requirement 7. Restrict access to cardholder data by business need-to-know</h3>
 
@@ -132,7 +135,7 @@
 
 <h3>Requirement 8. Assign a unique ID to each person with computer access</h3>
 
-<p>Sharing usernames and passwords leaves less detail for actions occurring for each individual user. It also generally leads to other bad practices, such as creating weak passwords and sharing them over insecure channels like email.  Never share your “user 1” or root login information between staff.</p>
+<p>Sharing usernames and passwords leaves less detail for actions occurring for each individual user. It also generally leads to other bad practices, such as creating weak passwords and sharing them over insecure channels like email. Never share your “user 1” or root login information between staff.</p>
 
 <h3>Requirement 9. Restrict physical access to cardholder data</h3>
 
@@ -168,7 +171,7 @@
 
 <p><img src="images/figures/PCI-levels-visa-cardbrand-2013-06-10.png" alt="" title="A table showing the 4 levels of PCI compliance transaction volumes for VISA card brand."></p>
 
-<p><em>Figure 1. The 4 levels of transaction volumes for VISA card brand. Other card brands (e.g. MasterCard, American Express, etc.) have different reporting and validation requirements. Image Source  <a href="http://usa.visa.com/merchants/risk_management/cisp_merchants.html">http://usa.visa.com/merchants/risk_management/cisp_merchants.html</a></em></p>
+<p><em>Figure 1. The 4 levels of transaction volumes for VISA card brand. Other card brands (e.g. MasterCard, American Express, etc.) have different reporting and validation requirements. Image Source <a href="http://usa.visa.com/merchants/risk_management/cisp_merchants.html">http://usa.visa.com/merchants/risk_management/cisp_merchants.html</a></em></p>
 
 <p>There are a few important points to emphasize for the Visa card brand:</p>
 
@@ -187,7 +190,7 @@
 
 <p><em>Figure 2. Breakdown of PCI-DSS version 3.0 SAQ types as a function of merchant activities.</em></p>
 
-<p>For the purposes of a typical Drupal eCommerce site, the SAQ A, A-EP, C, and D are the most relevant types<sup><a href="#footnote-A">A</a>, <a href="#footnote-B">B</a></sup>. It is also extremely important to understand which type the system falls into because there is a large difference in time, effort, risk, and expense in achieving compliance.</p>
+<p>For the purposes of a typical Drupal eCommerce site, the SAQ A, A-EP, and D are the most relevant types<sup><a href="#footnote-A">A</a>, <a href="#footnote-B">B</a></sup>. It is also extremely important to understand which type the system falls into because there is a large difference in time, effort, risk, and expense in achieving compliance.</p>
 
 <p><img src="images/figures/PCI-typical-costs-per-saq-type.png" alt="" title="Approximate PCI compliance costs per SAQ type. Factors include audits ($30,000-$100,000), time spent meeting each requirement, etc."></p>
 
@@ -197,7 +200,7 @@
 
 <h3>Drupal Specific Examples</h3>
 
-<p>The shopping cart selected (Drupal Commerce, Ubercart, Pay, Stripe, etc.) and the payment method within that shopping cart (hosted payment page, direct post, iframe, onsite, etc.) are usually the most significant factors in expanding or reducing the CDE, which directly impacts the SAQ type. Here are some situations that may force one into SAQ C/D:</p>
+<p>The shopping cart selected (Drupal Commerce, Ubercart, Pay, Stripe, etc.) and the payment method within that shopping cart (hosted payment page, direct post, iframe, onsite, etc.) are usually the most significant factors in expanding or reducing the CDE, which directly impacts the SAQ type. Here are some situations that may force one into SAQ D:</p>
 
 <ul>
 <li>A client that wants complete control over the checkout process may shy away from hosted payment pages, which may be the only viable shared-management option for a particular payment gateway<sup><a href="#footnote-C">C</a></sup>.</li>
@@ -212,7 +215,7 @@
 
 <p>A general guideline is that if the company’s servers store, transmit, or handle cardholder data, then it’s merchant managed. An example would be customer submitting a payment directly on a Drupal site using Ubercart connected to Authorize.Net because a customer’s payment information passes through merchant’s webserver on the way to being sent to Authorize.Net.</p>
 
-<p>Onsite payments posted directly back to Drupal (i.e. an HTTP POST request containing the cardholder data is submitted to the Drupal application, which results in a bootstrap and the passing of the cardholder data through the form API) immediately fall into SAQ C. If additional features are required (such as stored credit card numbers), the CDE scope expands further to SAQ D.</p>
+<p>Onsite payments posted directly back to Drupal (i.e. an HTTP POST request containing the cardholder data is submitted to the Drupal application, which results in a bootstrap and the passing of the cardholder data through the form API) immediately fall into SAQ D.</p>
 
 <p>Merchant-managed examples:</p>
 
@@ -229,10 +232,10 @@
 <ul>
 <li>Hosted Payment Page (HPP)</li>
 <li>Direct Post</li>
-<li>Inline Frame (aka iframe)</li>
+<li>Inline Frame (iframe)</li>
 </ul>
 
-<p>A HPP approach is where a user is redirected from a Drupal site to a third-party site in order to enter their payment details. If the transaction is successful, the customer is redirected back to the Drupal site with a one time authorization code or &quot;token&quot; that is then used by Drupal to immediately communicate with the HPP&#39;s API to validate the payment.</p>
+<p>A HPP approach is where a user is redirected from a Drupal site to a third-party site in order to enter their payment details. If the transaction is successful, the customer is redirected back to the Drupal site with the payment authorization details. Depending on the specific payment gateway&#39;s security requirements, these payment authorization details may get sent back to the payment gateway&#39;s API to further validate the payment.</p>
 
 <p>Example HPP solutions:</p>
 
@@ -242,7 +245,7 @@
 <li>PayPal Express Checkout (EC)</li>
 </ul>
 
-<p>A direct post approach is where the customer remains on the website, but the payment form is submitted directly from the customer’s browser to the payment gateway and a response is sent directly back to the customer with a one time authentication code or &quot;token&quot; that is then used by Drupal to immediately communicate with the HPP&#39;s API to validate the payment.</p>
+<p>A direct post approach is where the customer remains on the website, but the payment form is submitted directly from the customer’s browser to the payment gateway and a response is sent directly back to the customer with a one time authentication code or &quot;token&quot; that is then used by Drupal to immediately communicate with the payment gateway&#39;s API to validate the payment.</p>
 
 <p>Example direct post solutions:</p>
 
@@ -267,7 +270,7 @@
 
 <p>One might assume that a shared-management approach would qualify them for SAQ A. However, section 3.4.3 in the <em>PCI DSS eCommerce Guidelines Supplement</em> document makes it clear that each shared-management method has vulnerabilities <sup><a href="#cite-13">13</a></sup>, which are described in more detail below. Furthermore, <em>Understanding the SAQs for PCI DSS v3.0</em> (in addition to the SAQ A and SAQ A-EP v3.0 forms) specifically states that Direct Post and Hosted Payment Page solutions cannot qualify for SAQ A and must use SAQ A-EP<sup><a href="#cite-17">17</a></sup>.</p>
 
-<p>Frustrating as this may be for those wanting to achieve PCI SAQ A, the good news is that using a direct post or hosted payment page solution can still qualify as SAQ A-EP, which is significantly easier to achieve in comparison to SAQ C or SAQ D because a significant amount of the responsibility can still be considered outsourced.</p>
+<p>Frustrating as this may be for those wanting to achieve PCI SAQ A, the good news is that using a direct post or hosted payment page solution can still qualify as SAQ A-EP, which is much easier to achieve in comparison to SAQ D because a significant amount of the responsibility can still be considered outsourced.</p>
 
 <h3>Wholly Outsourced</h3>
 
@@ -279,7 +282,7 @@
 
 <p>The decision to allow iframe solutions into SAQ A is not without controversy because the one can still make the case that a breach of the Drupal application layer can compromise the delivery of the iframe. Therefore, while the final recommendations of this paper are to use iframe solutions in order to fall within scope of SAQ A, it is also recommended to always comply with SAQ A-EP (at a minimum) for security reasons and to future proof your Drupal site against the next versions of the PCI-DSS standard.</p>
 
-<p>There are other important changes introduced in the 3.0 standard, such as the requirement to have all components of the CDE documented with an explicit determination of responsibility for each component. For a full list of changes, please see the <em>Version 3.0 Change Highlights</em> and <em>Summary of Changes from PCI DSS Version 2.0 to 3.0</em> documents<sup><a href="#cite-18">18</a>,<a href="#cite-19">19</a></sup>.</p>
+<p>There are other important changes introduced in the 3.0 standard, such as the requirement to have all components of the CDE documented with an explicit determination of responsibility for each component. Also noteworthy is that SAQ C is no longer applicable for eCommerce channels, which means that all merchant-managed solutions must comply with the more rigorous SAQ D. For a full list of changes, please see the <em>Version 3.0 Change Highlights</em> and <em>Summary of Changes from PCI DSS Version 2.0 to 3.0</em> documents<sup><a href="#cite-18">18</a>,<a href="#cite-19">19</a></sup>.</p>
 
 <h2>Selecting the Appropriate Method</h2>
 
@@ -287,7 +290,7 @@
 
 <h3>Example: Recurring Payments for Ubercart on Drupal 7</h3>
 
-<p>As of June 2014, there is no wholly-outsourced or shared-management solution for a Drupal 7 website using Ubercart with a recurring billing requirement. To store a customer’s credit card information directly on Authorize.Net’s servers, one must use the included Ubercart Authorize.Net module and enable the customer information manager (CIM) option. Unfortunately, the way Ubercart implements CIM  requires the credit card information to pass through the Drupal application. Therefore this is a Merchant-managed solution, which requires one to adhere to every control item in SAQ C.</p>
+<p>As of June 2014, there is no wholly-outsourced or shared-management solution for a Drupal 7 website using Ubercart with a recurring billing requirement. To store a customer’s credit card information directly on Authorize.Net’s servers, one must use the included Ubercart Authorize.Net module and enable the customer information manager (CIM) option. Unfortunately, the way Ubercart implements CIM requires the credit card information to pass through the Drupal application. Therefore this is a Merchant-managed solution, which requires one to adhere to every control item in SAQ D.</p>
 
 <p><em>Authors Note: payment processors like Authorize.Net have the ability to use third-party iframes to integrate with their CIM service. However, the Ubercart community is unlikely to add that feature into its code base<sup><a href="#cite-14">14</a></sup>.</em></p>
 
@@ -303,7 +306,7 @@
 
 <h2>Recommendations</h2>
 
-<p>There is no one-size-fits-all solution because each company will have to balance the resources available with becoming compliant with the features necessary for the business. However, there are some general recommendations that apply across the board. The first is to use Drupal Commerce over Ubercart because Drupal Commerce has more developer focus on it and has a more consistent code base. It also has more shared-management payment solutions, and that trend is likely to continue. Finally, whenever possible, use a shared-management solution (SAQ A-EP compatible) over a merchant managed solution (SAQ C required) in order to significantly reduce the number of potential security exploits as well as the amount of security controls one has to meet in order to achieve compliance. If available, select an iframe solution (SAQ A compatible) because it further reduces the number of requirements necessary for compliance. However, it&#39;s still recommended for those using an iframe solution to still to adhere to SAQ A-EP because it&#39;ll future proof the CDE as well as adhere to many best practices, which should be implemented regardless.</p>
+<p>There is no one-size-fits-all solution because each company will have to balance the resources available with becoming compliant with the features necessary for the business. However, there are some general recommendations that apply across the board. The first is to use Drupal Commerce over Ubercart because Drupal Commerce has more developer focus on it and has a more consistent code base. It also has more shared-management payment solutions, and that trend is likely to continue. Finally, whenever possible, use a shared-management solution (SAQ A-EP compatible) over a merchant managed solution (SAQ D required) in order to significantly reduce the number of potential security exploits as well as the amount of security controls one has to meet in order to achieve compliance. If available, select an iframe solution (SAQ A compatible) because it further reduces the number of requirements necessary for compliance. However, it&#39;s still recommended for those using an iframe solution to still to adhere to SAQ A-EP because it&#39;ll future proof the CDE as well as adhere to many best practices, which should be implemented regardless.</p>
 
 <h2>Drupal Specific Exploits</h2>
 
@@ -322,7 +325,7 @@
 
 <p>For specific ways that the Drupal application can be compromised, please visit DrupalSecurityReport.org.</p>
 
-<h2>Locking Down Drupal for PCI SAQ C/D</h2>
+<h2>Locking Down Drupal for PCI SAQ D</h2>
 
 <p>This is a non-exhaustive list of ways in which you can harden security at the Drupal level.</p>
 
@@ -335,8 +338,8 @@
 <li><strong>Removing credentials from settings.php.</strong> One can include a settings.local.php file within settings.php to ensure that sensitive information is not distributed.</li>
 <li><strong>Security Updates.</strong> Always keep up with the Drupal Security Advisories, which are released every Wednesday.</li>
 <li><strong>Paranoia and Security Review Modules.</strong> The modules provide and review your Drupal configurations to ensure they adhere to best security practices.</li>
-<li><strong>Security Kit Module.</strong> This module provides Drupal with various security hardening options. This lets your mitigate the risks of exploitation of different web application vulnerabilities.</li>
-<li><strong>Holistic approach to compliance.</strong> Consider PCI DSS compliance as part of the bigger picture of your organization’s compliance requirements.  Often organizations will have overlapping compliance requirements from standards such as NIST 800-53, ISO27002, HIPAA, etc.</li>
+<li><strong>Security Kit Module.</strong> This module provides Drupal with various security hardening options. This lets you mitigate the risks of exploitation of different web application vulnerabilities.</li>
+<li><strong>Holistic approach to compliance.</strong> Consider PCI DSS compliance as part of the bigger picture of your organization’s compliance requirements. Often organizations will have overlapping compliance requirements from standards such as NIST 800-53, ISO27002, HIPAA, etc.</li>
 </ul>
 
 <h2>Drupal’s Security Team</h2>
@@ -459,7 +462,7 @@
 
 <p><img src="images/sponsors/logo-newmedia.png" alt="" title="NEWMEDIA"></p>
 
-<p>We love web design, whatever you call it nowadays.  UI/UX, interface design, you name it.  Our clients are not just in Denver, CO, but also all over the USA; many are even overseas.  We don&#39;t just make websites look pretty, though; we develop complicated websites in-house as well.  Yes, we may well be the most established provider of Drupal web development services in Colorado.</p>
+<p>We love web design, whatever you call it nowadays. UI/UX, interface design, you name it. Our clients are not just in Denver, CO, but also all over the USA; many are even overseas. We don&#39;t just make websites look pretty, though; we develop complicated websites in-house as well. Yes, we may well be the most established provider of Drupal web development services in Colorado.</p>
 
 <p><a href="http://www.newmediadenver.com">http://www.newmediadenver.com</a></p>
 
