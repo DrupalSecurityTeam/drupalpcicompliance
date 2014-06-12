@@ -170,7 +170,7 @@ The PCI council defines 8 different validation types:
 
 *Figure 2. Breakdown of PCI-DSS version 3.0 SAQ types as a function of merchant activities.*
 
-For the purposes of a typical Drupal eCommerce site, the SAQ A, A-EP, C, and D are the most relevant types<sup>[A](#footnote-A), [B](#footnote-B)</sup>. It is also extremely important to understand which type the system falls into because there is a large difference in time, effort, risk, and expense in achieving compliance.
+For the purposes of a typical Drupal eCommerce site, the SAQ A, A-EP, and D are the most relevant types<sup>[A](#footnote-A), [B](#footnote-B)</sup>. It is also extremely important to understand which type the system falls into because there is a large difference in time, effort, risk, and expense in achieving compliance.
 
 ![](images/figures/PCI-typical-costs-per-saq-type.png "Approximate PCI compliance costs per SAQ type. Factors include audits ($30,000-$100,000), time spent meeting each requirement, etc.")
 
@@ -180,7 +180,7 @@ For many eCommerce stores, selecting a payment method that places them in type C
 
 ### Drupal Specific Examples
 
-The shopping cart selected (Drupal Commerce, Ubercart, Pay, Stripe, etc.) and the payment method within that shopping cart (hosted payment page, direct post, iframe, onsite, etc.) are usually the most significant factors in expanding or reducing the CDE, which directly impacts the SAQ type. Here are some situations that may force one into SAQ C/D:
+The shopping cart selected (Drupal Commerce, Ubercart, Pay, Stripe, etc.) and the payment method within that shopping cart (hosted payment page, direct post, iframe, onsite, etc.) are usually the most significant factors in expanding or reducing the CDE, which directly impacts the SAQ type. Here are some situations that may force one into SAQ D:
 
 * A client that wants complete control over the checkout process may shy away from hosted payment pages, which may be the only viable shared-management option for a particular payment gateway<sup>[C](#footnote-C)</sup>.
 * A client sometimes must use a particular payment gateway because of an existing contract/business relationship, and that gateway may offer no shared-management options.
@@ -193,7 +193,7 @@ The PCI council defines 3 types of payment methods: Merchant-managed, Shared-man
 
 A general guideline is that if the company’s servers store, transmit, or handle cardholder data, then it’s merchant managed. An example would be customer submitting a payment directly on a Drupal site using Ubercart connected to Authorize.Net because a customer’s payment information passes through merchant’s webserver on the way to being sent to Authorize.Net.
 
-Onsite payments posted directly back to Drupal (i.e. an HTTP POST request containing the cardholder data is submitted to the Drupal application, which results in a bootstrap and the passing of the cardholder data through the form API) immediately fall into SAQ C. If additional features are required (such as stored credit card numbers), the CDE scope expands further to SAQ D.
+Onsite payments posted directly back to Drupal (i.e. an HTTP POST request containing the cardholder data is submitted to the Drupal application, which results in a bootstrap and the passing of the cardholder data through the form API) immediately fall into SAQ D.
 
 Merchant-managed examples:
 
@@ -238,7 +238,7 @@ The common denominator in all shared-management configurations is that the check
 
 One might assume that a shared-management approach would qualify them for SAQ A. However, section 3.4.3 in the _PCI DSS eCommerce Guidelines Supplement_ document makes it clear that each shared-management method has vulnerabilities <sup>[13](#cite-13)</sup>, which are described in more detail below. Furthermore, _Understanding the SAQs for PCI DSS v3.0_ (in addition to the SAQ A and SAQ A-EP v3.0 forms) specifically states that Direct Post and Hosted Payment Page solutions cannot qualify for SAQ A and must use SAQ A-EP<sup>[17](#cite-17)</sup>.
 
-Frustrating as this may be for those wanting to achieve PCI SAQ A, the good news is that using a direct post or hosted payment page solution can still qualify as SAQ A-EP, which is significantly easier to achieve in comparison to SAQ C or SAQ D because a significant amount of the responsibility can still be considered outsourced.
+Frustrating as this may be for those wanting to achieve PCI SAQ A, the good news is that using a direct post or hosted payment page solution can still qualify as SAQ A-EP, which is much easier to achieve in comparison to SAQ D because a significant amount of the responsibility can still be considered outsourced.
 
 ### Wholly Outsourced
 
@@ -250,7 +250,7 @@ Version 3.0 eliminated much of the confusion that existed in version 2.0 with re
 
 The decision to allow iframe solutions into SAQ A is not without controversy because the one can still make the case that a breach of the Drupal application layer can compromise the delivery of the iframe. Therefore, while the final recommendations of this paper are to use iframe solutions in order to fall within scope of SAQ A, it is also recommended to always comply with SAQ A-EP (at a minimum) for security reasons and to future proof your Drupal site against the next versions of the PCI-DSS standard.
 
-There are other important changes introduced in the 3.0 standard, such as the requirement to have all components of the CDE documented with an explicit determination of responsibility for each component. For a full list of changes, please see the _Version 3.0 Change Highlights_ and _Summary of Changes from PCI DSS Version 2.0 to 3.0_ documents<sup>[18](#cite-18),[19](#cite-19)</sup>.
+There are other important changes introduced in the 3.0 standard, such as the requirement to have all components of the CDE documented with an explicit determination of responsibility for each component. Also noteworthy is that SAQ C is no longer applicable for eCommerce channels, which means that all merchant-managed solutions must comply with the more rigorous SAQ D. For a full list of changes, please see the _Version 3.0 Change Highlights_ and _Summary of Changes from PCI DSS Version 2.0 to 3.0_ documents<sup>[18](#cite-18),[19](#cite-19)</sup>.
 
 ## Selecting the Appropriate Method
 
@@ -258,7 +258,7 @@ SAQ A is obviously desirable (and recommended) because of its lower risk, time, 
 
 ### Example: Recurring Payments for Ubercart on Drupal 7
 
-As of June 2014, there is no wholly-outsourced or shared-management solution for a Drupal 7 website using Ubercart with a recurring billing requirement. To store a customer’s credit card information directly on Authorize.Net’s servers, one must use the included Ubercart Authorize.Net module and enable the customer information manager (CIM) option. Unfortunately, the way Ubercart implements CIM requires the credit card information to pass through the Drupal application. Therefore this is a Merchant-managed solution, which requires one to adhere to every control item in SAQ C.
+As of June 2014, there is no wholly-outsourced or shared-management solution for a Drupal 7 website using Ubercart with a recurring billing requirement. To store a customer’s credit card information directly on Authorize.Net’s servers, one must use the included Ubercart Authorize.Net module and enable the customer information manager (CIM) option. Unfortunately, the way Ubercart implements CIM requires the credit card information to pass through the Drupal application. Therefore this is a Merchant-managed solution, which requires one to adhere to every control item in SAQ D.
 
 _Authors Note: payment processors like Authorize.Net have the ability to use third-party iframes to integrate with their CIM service. However, the Ubercart community is unlikely to add that feature into its code base<sup>[14](#cite-14)</sup>._
 
@@ -274,7 +274,7 @@ There are also other payment methods on Drupal, such as the stand alone Stripe a
 
 ## Recommendations
 
-There is no one-size-fits-all solution because each company will have to balance the resources available with becoming compliant with the features necessary for the business. However, there are some general recommendations that apply across the board. The first is to use Drupal Commerce over Ubercart because Drupal Commerce has more developer focus on it and has a more consistent code base. It also has more shared-management payment solutions, and that trend is likely to continue. Finally, whenever possible, use a shared-management solution (SAQ A-EP compatible) over a merchant managed solution (SAQ C required) in order to significantly reduce the number of potential security exploits as well as the amount of security controls one has to meet in order to achieve compliance. If available, select an iframe solution (SAQ A compatible) because it further reduces the number of requirements necessary for compliance. However, it's still recommended for those using an iframe solution to still to adhere to SAQ A-EP because it'll future proof the CDE as well as adhere to many best practices, which should be implemented regardless.
+There is no one-size-fits-all solution because each company will have to balance the resources available with becoming compliant with the features necessary for the business. However, there are some general recommendations that apply across the board. The first is to use Drupal Commerce over Ubercart because Drupal Commerce has more developer focus on it and has a more consistent code base. It also has more shared-management payment solutions, and that trend is likely to continue. Finally, whenever possible, use a shared-management solution (SAQ A-EP compatible) over a merchant managed solution (SAQ D required) in order to significantly reduce the number of potential security exploits as well as the amount of security controls one has to meet in order to achieve compliance. If available, select an iframe solution (SAQ A compatible) because it further reduces the number of requirements necessary for compliance. However, it's still recommended for those using an iframe solution to still to adhere to SAQ A-EP because it'll future proof the CDE as well as adhere to many best practices, which should be implemented regardless.
 
 ## Drupal Specific Exploits
 
@@ -291,7 +291,7 @@ To further emphasize the importance of adhering to the PCI standard (for both me
 
 For specific ways that the Drupal application can be compromised, please visit DrupalSecurityReport.org.
 
-## Locking Down Drupal for PCI SAQ C/D
+## Locking Down Drupal for PCI SAQ D
 
 This is a non-exhaustive list of ways in which you can harden security at the Drupal level.
 
