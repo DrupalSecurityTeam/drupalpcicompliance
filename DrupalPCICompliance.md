@@ -75,7 +75,7 @@ If you ever face a security breach and credit card information is stolen, having
 
 ### Public Relations
 
-Beyond the financial burden of dealing with a breach, the loss of trust for a companies website, business, and brand can be staggering. The Sony PlayStation breach put more than 77 million credit card numbers at risk <sup>[9](#cite-9)</sup>. The ramifications of alerting a userbase and requiring that many users to change their cards and/or put a freeze on their credit cards can quickly lose current and future customers. These transactions can also impact customer credit scores if they unknowingly overdraft or miss a payment they were not expecting.
+Beyond the financial burden of dealing with a breach, the loss of trust for a company's website, business, and brand can be staggering. The Sony PlayStation breach put more than 77 million credit card numbers at risk <sup>[9](#cite-9)</sup>. The ramifications of alerting a userbase and requiring that many users to change their cards and/or put a freeze on their credit cards can quickly lose current and future customers. These transactions can also impact customer credit scores if they unknowingly overdraft or miss a payment they were not expecting.
 
 ### Summary
 
