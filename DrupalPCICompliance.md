@@ -57,7 +57,7 @@ While these scenarios do in fact happen, their frequency is far outweighed by th
 
 ### Privilege
 
-A merchant accepting credit cards is a privilege, not a right. The Payment Card Industry has established a system of payment that is convenient for consumers and business owners who choose not to deal in checks and cash. It is their system and they get to set the requirements. Anyone accepting online payments must sign a contract and/or accept a terms of use agreement that explicitly states the merchants responsibility to adhere to these requirements (unfortunately this isn't always emphasized in the sign up process, so be sure to read through the fine print). Therefore, simply installing a Drupal site to accept credit card payments doesn’t mean you have established the proper means of doing so.
+A merchant's ability to accept card payments is a privilege, not a right. The Payment Card Industry has established a system of payment that is convenient for consumers and business owners who choose not to deal in checks and cash. It is their system and they get to set the requirements. Anyone accepting online payments must sign a contract and/or accept a terms of use agreement that explicitly states the merchants responsibility to adhere to these requirements (unfortunately this isn't always emphasized in the sign up process, so be sure to read through the fine print). Therefore, simply installing a Drupal site to accept credit card payments doesn’t mean you have established the proper means of doing so.
 
 ### Distributed Components
 
@@ -141,7 +141,7 @@ Knowing how to get started can seem overwhelming at first. Thankfully, the PCI c
 
 Your credit card processor and acquiring bank are required to ask you for annual SAQ forms - if they haven’t asked yet, they will soon!
 
-The key is determining which SAQ you should be filling out because they vary wildly in terms of quantity of responsibilities and the amount of time and effort it takes to complete them. SAQ A has 14 items and can be completed in under an hour. SAQ D contains between 326 and 347 items and can take months of time and millions of dollars to achieve<sup>[21](#cite-21)</sup>. The following section will help you make sense of these different levels and how you can select the method that balances your business needs with your ability to achieve compliance.
+The key is determining which SAQ you should be filling out because they vary wildly in terms of quantity of responsibilities and the amount of time and effort it takes to complete them. SAQ A has 14 items and usually can be completed in under a day if not within a couple of hours. SAQ D contains between 326 and 347 items and can take months of time and millions of dollars to achieve<sup>[21](#cite-21)</sup>. The following section will help you make sense of these different levels and how you can select the method that balances your business needs with your ability to achieve compliance.
 
 ### Determining Your Responsibilities
 
