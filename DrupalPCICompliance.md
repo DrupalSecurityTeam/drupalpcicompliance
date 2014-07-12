@@ -461,19 +461,19 @@ Copperly educates businesses in the Drupal community and beyond about cost-effec
 5. <a name="cite-5"></a>[PCI DSS - Glossary of Terms, Abbreviations, and Acronyms](http://goo.gl/IE0Fb) - http://goo.gl/IE0Fb
 6. <a name="cite-6"></a>[2010 Annual Study: U.S. Cost of a Data Breach](http://goo.gl/EoEp6) - http://goo.gl/EoEp6
 7. <a name="cite-7"></a>[Heartland Data Breach: MasterCard, Visa Impose Hefty Fines](http://goo.gl/t0lQT) - http://goo.gl/t0lQT
-8. <a name="cite-8"></a>[Data-breach costs take toll on Target profit](http://goo.gl/aKjIOI)
+8. <a name="cite-8"></a>[Data-breach costs take toll on Target profit](http://goo.gl/aKjIOI) - http://goo.gl/aKjIOI
 9. <a name="cite-9"></a>[In Data Leaks, Culprits Often Are Mom, Pop](http://goo.gl/aGYbq) - http://goo.gl/aGYbq
 10. <a name="cite-10"></a>[Sony PlayStation suffers massive data breach](http://goo.gl/Um5cE) - http://goo.gl/Um5cE
 11. <a name="cite-11"></a>[Official PCI Security Standards Council Site](http://goo.gl/Z1lUr) - http://goo.gl/Z1lUr
 12. <a name="cite-12"></a>[Approved Scanning Vendors](http://goo.gl/FzzH6) - http://goo.gl/FzzH6
 13. <a name="cite-13"></a>[Navigation PCI DSS](http://goo.gl/H5jOK) - http://goo.gl/H5jOK
-14. <a name="cite-14"></a>[New! More! A First Look at the PCI DSS 3.0 SAQs](http://goo.gl/YnjkJZ)
+14. <a name="cite-14"></a>[New! More! A First Look at the PCI DSS 3.0 SAQs](http://goo.gl/YnjkJZ) - http://goo.gl/YnjkJZ
 15. <a name="cite-15"></a>[Information Supplement: PCI DSS E-commerce Guidelines](http://goo.gl/R21rw) - http://goo.gl/R21rw
-16. <a name="cite-16"></a>[Understanding the SAQs for PCI DSS v3.0](http://goo.gl/V8ZrVF)
-17. <a name="cite-17"></a>[Version 3.0 Change Highlights](http://goo.gl/XDBzkz)
-18. <a name="cite-18"></a>[Summary of Changes from PCI DSS Version 2.0 to 3.0](http://goo.gl/7nR1Gt)
+16. <a name="cite-16"></a>[Understanding the SAQs for PCI DSS v3.0](http://goo.gl/V8ZrVF) - http://goo.gl/V8ZrVF
+17. <a name="cite-17"></a>[Version 3.0 Change Highlights](http://goo.gl/XDBzkz) - http://goo.gl/XDBzkz
+18. <a name="cite-18"></a>[Summary of Changes from PCI DSS Version 2.0 to 3.0](http://goo.gl/7nR1Gt) - http://goo.gl/7nR1Gt
 19. <a name="cite-19"></a>[Integrate Authorize.net (Hosted) CIM](http://goo.gl/rvOfz) - http://goo.gl/rvOfz
-20. <a name="cite-20"></a>[Top 12 Drupal PCI Compliance Myths](http://goo.gl/phZcg1)
+20. <a name="cite-20"></a>[Top 12 Drupal PCI Compliance Myths](http://goo.gl/phZcg1) - http://goo.gl/phZcg1
 
 ## Footnotes
 
