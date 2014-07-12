@@ -51,7 +51,7 @@ We love web design, whatever you call it nowadays.  UI/UX, interface design, you
 
 ![](/images/sponsors/logo-townsend-security.png "Townsend Security")
 
-Townsend Security creates encryption and key management solutions that help organizations meet compliance requirements and mitigate the risk of data breaches. Over 3,000 companies worldwide trust Townsend Security’s NIST and FIPS 140-2 validated solutions to meet the requirements in PCI DSS, HIPAA, FISMA, and other regulations. Learn more about [Key Connection for Drupal](http://www.townsendsecurity.com/drupal) at or join our [Drupal Developer program](http://www.townsendsecurity.com/drupal-developer).
+Townsend Security creates encryption and key management solutions that help organizations meet compliance requirements and mitigate the risk of data breaches. Over 3,000 companies worldwide trust Townsend Security’s NIST and FIPS 140-2 validated solutions to meet the requirements in PCI DSS, HIPAA, FISMA, and other regulations. Learn more about [Key Connection for Drupal](http://www.townsendsecurity.com/drupal?utm_campaign=Drupal%20PCI%20White%20Paper&utm_source=Drupal%20PCI%20White%20Paper) or join our [Drupal Developer program](http://info.townsendsecurity.com/developer-partner-request?utm_campaign=Drupal%20PCI%20White%20Paper&utm_source=Drupal%20PCI%20White%20Paper).
 
 [http://www.townsendsecurity.com](http://www.townsendsecurity.com)
 
