@@ -483,6 +483,10 @@ Copperly educates businesses in the Drupal community and beyond about cost-effec
 * <a name="footnote-C"></a>C. It should be noted that the stigma against hosted payment pages continues to fade away as it becomes a more common and accepted form of transaction, particularly in the EU.
 * <a name="footnote-D"></a>D. Visit [http://www.visa.com/splisting](http://www.visa.com/splisting) to confirm whether or not a vendor is a valid Service Provider.
 
+## Reviewers
+
+The authors of this paper would like to thank the following individuals for reviewing the paper and providing feedback to improve its accuracy and utility. In alphabetical order: Ryan Cross (rcross), Robert Douglass (robertdouglass), Trent Hein (thein), Michael Hess (mlhess), Dave Long (longwave), Ryan Szrama (rszrama), Peter Wolanin (pwolanin).
+
 ## Appendix
 
 ### Additional Resources
