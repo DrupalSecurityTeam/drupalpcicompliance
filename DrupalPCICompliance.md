@@ -8,7 +8,7 @@ _Authors:_
 
 v1.1 alpha
 
-June 24th, 2014
+July 11th, 2014
 
 Updated to PCI-DSS 3.0
 
@@ -268,7 +268,7 @@ One of the easiest ways to use a shared-management approach is to redirect to a 
 
 With respect to direct post methods using JavaScript (JS), there is always the consideration that a user may have disabled JS by default and therefore be unable to enter a payment at all without prompting them to adjust their browser security settings.
 
-There are considerations with respect to which shopping cart method to use (or continue to use) on top of Drupal. Drupal Commerce is much more popular for Drupal 7 and popularity brings more people to fix bugs and contribute modules. However, there is still a significant user base using Ubercart, and while Ubercart has far fewer shared-management payment gateway modules that are publicly available, there is nothing precluding the community from creating them in order to address the newer and more stringent PCI-DSS requirements. The additional costs of becoming compliant with Ubercart should be a consideration when evaluating the two solutions.
+There are considerations with respect to which shopping cart method to use (or continue to use) on top of Drupal. Drupal Commerce is much more popular for Drupal 7 and popularity brings more people to fix bugs and contribute modules. However, there is still a significant user base using Ubercart, and while Ubercart has far fewer shared-management payment gateway modules that are publicly available, there is nothing precluding the community from creating them in order to address the newer and more stringent PCI-DSS requirements. The possibility of additional costs to become compliant with Ubercart should be a consideration when evaluating the two solutions.
 
 There are also other payment methods on Drupal, such as the stand alone Stripe and Pay modules, which offer a simpler and smaller feature set than Ubercart and Drupal Commerce and may be more appropriate for one time payment solutions.
 
