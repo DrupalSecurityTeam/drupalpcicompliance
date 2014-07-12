@@ -217,7 +217,7 @@ Example HPP solutions:
 * PayPal Payments Standard (PPS)
 * PayPal Express Checkout (EC)
 
-A direct post approach is where the customer remains on the website, but the payment form is submitted directly from the customer’s browser to the payment gateway and a response is sent directly back to the customer with a one time authentication code or "token" that is then used by Drupal to immediately communicate with the payment gateway's API to validate the payment.
+A direct post approach is where the customer remains on the website, but their card data is submitted directly from the customer’s browser to the payment gateway and a response is sent directly back to the customer with a one time authentication code or "token" that is then used by Drupal to immediately communicate with the payment gateway's API to validate the payment. There are two flavors of direct post: setting an HTML form's action attribute to a 3rd party API endpoint or achieving the same with Javascript.
 
 Example direct post solutions:
 
