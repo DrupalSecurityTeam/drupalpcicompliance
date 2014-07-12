@@ -2,13 +2,6 @@
 Drupal PCI Compliance White Paper
 ===================
 
-## WARNING!
-
-This branch is currently in review and NOT ready for public consumption.
-
-## END WARNING!
-
-
 Visit the official [Drupal PCI Compliance website here](http://drupalpcicompliance.org/).
 
 ## Download
