@@ -67,7 +67,7 @@ _Author's Note: It's important to note that ALL systems connected to the same ne
 
 ### Distributed Companies
 
-It’s not common for one company to control the entire end-to-end process of handing a credit card transaction. Therefore, it’s important to know how exactly how these companies distribute the responsibility as well as liability for ensuring this process is secure.
+It’s not common for one company to control the entire end-to-end process of handing a credit card transaction. Therefore, it’s important to know exactly how these companies distribute the responsibility as well as liability for ensuring this process is secure.
 
 ### Financial
 
@@ -129,7 +129,7 @@ Audit trails are critical for identifying changes in the system because a single
 
 ### Requirement 11. Regularly test security systems and processes
 
-It’s not enough to have a system that works in theory. Periodic vulnerability scans full penetration tests are necessary to prove that the system responds as expected. These tests have to be run regularly (at least quarterly) and are ideally run whenever there is a configuration or code change that could introduce a new vulnerability. Ensure you are using an officially Authorized Scanning Vendor (ASV) as listed on the PCI site<sup>[12](#cite-12)</sup>.
+It’s not enough to have a system that works in theory. Periodic vulnerability scans and full penetration tests are necessary to prove that the system responds as expected. These tests have to be run regularly (at least quarterly) and are ideally run whenever there is a configuration or code change that could introduce a new vulnerability. Ensure you are using an officially Authorized Scanning Vendor (ASV) as listed on the PCI site<sup>[12](#cite-12)</sup>.
 
 ### Requirement 12. Maintain a policy that addresses information security for all personnel
 
@@ -191,7 +191,7 @@ The PCI council defines 3 types of payment methods: Merchant-managed, Shared-man
 
 ### Merchant-managed
 
-A general guideline is that if the company’s servers store, transmit, or handle cardholder data, then it’s merchant managed. An example would be customer submitting a payment directly on a Drupal site using Ubercart connected to Authorize.Net because a customer’s payment information passes through the merchant’s webserver on the way to being sent to Authorize.Net.  It does not matter if the merchant is storing the data on their servers, since a hacker could gain access if they were able to compromise the server. 
+A general guideline is that if the company’s servers store, transmit, or handle cardholder data, then it’s merchant managed. An example would be customer submitting a payment directly on a Drupal site using Ubercart connected to Authorize.Net because a customer’s payment information passes through the merchant’s webserver on the way to being sent to Authorize.Net.  It does not matter if the merchant is storing the data on their servers, since a hacker could gain access if they were able to compromise the server.
 
 Onsite payments posted directly back to Drupal (i.e. an HTTP POST request containing the cardholder data is submitted to the Drupal application, which results in a bootstrap and the passing of the cardholder data through the form API) immediately fall into SAQ D.
 
@@ -246,7 +246,7 @@ In a wholly outsourced solution, everything regarding the Drupal application is 
 
 ### Version 3.0 Disclaimer
 
-Version 3.0 eliminated much of the confusion that existed in version 2.0 with respect to selecting the appropriate SAQ form for each shared-management solution. Previously, one could formulate a strong argument for SAQ A, SAQ C, or some arbitrary hybrid of the two. And given the large difference in the implications for each SAQ type (see Figure 2), it was difficult to confidently make a final determination about each of these shared-management solutions. SAQ A-EP not only introduced a middle ground, but the requirements for SAQ A and SAQ A-EP made it clear with respect to which solution was appropriate for each—iframe methods are compatible with SAQ A while direct post and hosted payment page methods are not. 
+Version 3.0 eliminated much of the confusion that existed in version 2.0 with respect to selecting the appropriate SAQ form for each shared-management solution. Previously, one could formulate a strong argument for SAQ A, SAQ C, or some arbitrary hybrid of the two. And given the large difference in the implications for each SAQ type (see Figure 2), it was difficult to confidently make a final determination about each of these shared-management solutions. SAQ A-EP not only introduced a middle ground, but the requirements for SAQ A and SAQ A-EP made it clear with respect to which solution was appropriate for each—iframe methods are compatible with SAQ A while direct post and hosted payment page methods are not.
 
 The decision to allow iframe solutions into SAQ A is not without controversy because the one can still make the case that a breach of the Drupal application layer can compromise the delivery of the iframe. Therefore, while the final recommendations of this paper are to use iframe solutions in order to fall within scope of SAQ A, it is also recommended to always comply with SAQ A-EP (at a minimum) for security reasons and to future proof your Drupal site against the next versions of the PCI-DSS standard.
 
@@ -376,7 +376,7 @@ Shared hosting is simply not secure enough for PCI SAQ A-EP, C, or D because the
 
 As of July 2014, we are seeing a growing number of reputable hosting providers introducing PCI compliant cloud hosting options. However, you must do your due diligence before immediately accepting their claims. As part of the version 3.0 standard, each party must explicitly agree to the particular sections of the standard that they assume responsibility. Not only should the cloud hosting provider explicitly state that their solution is PCI compliant and they will assume the responsibilities within their jurisdiction, but the cloud hosting provider should also be able to provide documentation (upon request) to validate their claims.
 
-Regardless of if you choose to use a cloud or dedicated hardware solution, you must us a PCI DSS certified service provider if you are outsourcing hosting for eCommerce servers.
+Regardless of if you choose to use a cloud or dedicated hardware solution, you must use a PCI DSS certified service provider if you are outsourcing hosting for eCommerce servers.
 
 ### I can set it and forget it.
 
