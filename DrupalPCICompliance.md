@@ -14,7 +14,7 @@ Updated to PCI-DSS 3.0
 
 ## Introduction
 
-This document provides a high level overview regarding Payment Card Industry Data Security Standard (PCI DSS) compliance specifically for Drupal eCommerce solutions. The intended audiences include: Drupal developers; companies providing Drupal products, services, and hosting; and businesses evaluating Drupal as part of their eCommerce solution. Goals of this document: to emphasize the importance of PCI compliance; to summarize the options available in becoming and maintaining compliant; to provide clear next steps and additional resources.
+This document provides a high level overview regarding Payment Card Industry Data Security Standard (PCI DSS) compliance specifically for Drupal eCommerce solutions. The intended audiences include: Drupal developers; companies providing Drupal products, services, and hosting; and businesses evaluating Drupal as part of their eCommerce solution. Goals of this document: to emphasize the importance of PCI compliance; to summarize the options available in becoming and maintaining compliance; to provide clear next steps and additional resources.
 
 ## Executive Summary
 
@@ -22,7 +22,7 @@ eCommerce volume continues to grow by double digit percentages each year<sup>[1]
 
 Drupal is an attractive eCommerce platform for many reasons: Its Open Source licensing eliminates one time and recurring costs to own and use, it is extremely modular and flexible, and it has a large, passionate, and world wide community that is continually contributing to and growing the platform. The Drupal community also makes a concerted effort when it comes to ensuring the platform is secure. There is a security team, weekly security advisories, venues to discuss security best practices, a collection of tools to help detect security vulnerabilities, and many other security focused strengths. The result is that Drupal is one of the most secure content management and eCommerce solutions available to merchants today.
 
-However, while it is possible to make a Drupal-based eCommerce environment PCI DSS compliant through proper planning, usage, maintenance, and management, the mere use of Drupal by itself is _IS NOT_ sufficient to ensure the level of security necessary to become compliant. First, it’s possible to make Drupal insecure through the use of inappropriate configurations and site mismanagement. Second, Drupal is only a single component of the cardholder data environment (CDE). Hosting servers, networks, and other factors play a significant role in securing the entire end-to-end process.
+However, while it is possible to make a Drupal-based eCommerce environment PCI DSS compliant through proper planning, usage, maintenance, and management, the mere use of Drupal by itself _IS NOT_ sufficient to ensure the level of security necessary to become compliant. First, it’s possible to make Drupal insecure through the use of inappropriate configurations and site mismanagement. Second, Drupal is only a single component of the cardholder data environment (CDE). Hosting servers, networks, and other factors play a significant role in securing the entire end-to-end process.
 
 How and where the credit card data is processed, transmitted, and stored determines the size, complexity, and risk associated with the cardholder data environment, which directly impacts the time, resources, and expertise required to achieve and maintain compliance. Whenever possible, wholly-outsourced and shared-management implementations can make it easier to complete this process. Merchant-managed solutions are the most cost prohibitive for all but enterprise level companies, and should be avoided unless the business needs require them.
 
@@ -51,13 +51,13 @@ PCI compliance is important for the industry as a whole as well as companies spe
 
 ### Trust
 
-Online credit card transactions have become so common and accepted in our society that it's easy to forget what is at stake. When a thief goes after physical credit cards the amount of financial loss is limited in size and quantity because each card has to be stolen one at a time. However in the case of electronic payments, a single computer hacker can potentially breach multiple websites with the same exploit and steal hundreds, thousands, or even millions of credit cards. The financial loss by the number of people affected in a website compromise can be staggering.
+Online credit card transactions have become so common and accepted in our society that it's easy to forget what is at stake. When a thief goes after physical credit cards the amount of financial loss to a financial institution is limited in size and quantity because each card has to be stolen one at a time. However in the case of electronic payments, a single computer hacker can potentially breach multiple websites with the same exploit and steal hundreds, thousands, or even millions of credit cards. The financial loss by a financial institution and the number of people affected in a website compromise can be staggering.
 
 While these scenarios do in fact happen, their frequency is far outweighed by the volume of transactions that are handled securely. This is in part because of the set of security standards set forth by the Payment Card Industry. When properly applied, the risk level for transactions goes down significantly, which leads to more consumer trust in merchants, the process, and the industry as a whole can continue to expand. However, if this trust is broken, consumers will lose this confidence and seek other merchants and means of payment.
 
 ### Privilege
 
-A merchant's ability to accept card payments is a privilege, not a right. The Payment Card Industry has established a system of payment that is convenient for consumers and business owners who choose not to deal in checks and cash. It is their system and they get to set the requirements. Anyone accepting online payments must sign a contract and/or accept a terms of use agreement that explicitly states the merchants responsibility to adhere to these requirements (unfortunately this isn't always emphasized in the sign up process, so be sure to read through the fine print). Therefore, simply installing a Drupal site to accept credit card payments doesn’t mean you have established the proper means of doing so.
+A merchant's ability to accept credit card payments is a privilege, not a right. The Payment Card Industry has established a system of payment that is convenient for consumers and business owners. It is their system and they get to set the requirements. Anyone accepting online payments must sign a contract and/or accept a terms of use agreement that explicitly states the merchants responsibility to adhere to these requirements (unfortunately this isn't always emphasized in the sign up process, so be sure to read through the fine print). If a merchant fails to adhere to these requirements their ability to accept credit cards as a form of payment can be suspended.
 
 ### Distributed Components
 
@@ -71,21 +71,21 @@ It’s not common for one company to control the entire end-to-end process of ha
 
 ### Financial
 
-If you ever face a security breach and credit card information is stolen, having a proven record of your PCI compliance can protect you from the financial penalties (ranging from $25 to $215 per compromised card<sup>[6](#cite-6)</sup>). Major corporations, such as Heartland Payment Systems, have faced fines as large as $12.5 million<sup>[7](#cite-7)</sup>. Target attributed a portion of its 5.3% loss in sales and a 46% drop in profit during the 4th quarter of 2013 to its security breach in November of that year, which resulted in 40 million compromised credit card records<sup>[8](#cite-8)</sup>. Small companies are equally at risk, accounting for 80% of all instances of unauthorized access<sup>[9](#cite-9)</sup>. Finally, any company that has a reported breach on their record must undergo mandatory Report On Compliance audits, which alone can cost tens of thousands of dollars.
+If you ever face a security breach and credit card information is stolen, having a proven record of your PCI compliance can protect you from the financial penalties (ranging from $25 to $215 per compromised card<sup>[6](#cite-6)</sup>). Major corporations, such as Heartland Payment Systems, have faced fines as large as $12.5 million<sup>[7](#cite-7)</sup>. In addition to fines, your organization and brand can suffer financially due to a breach. Target Brands, Inc. attributed a portion of its 5.3% loss in sales and a 46% drop in profit during the 4th quarter of 2013 to its security breach in November of that year, which resulted in 40 million compromised credit card records<sup>[8](#cite-8)</sup>. Finally, any company that has a reported breach on their record must undergo mandatory Report On Compliance audits, which alone can cost tens of thousands of dollars.
 
 ### Public Relations
 
-Beyond the financial burden of dealing with a breach, the loss of trust for a company's website, business, and brand can be staggering. The Sony PlayStation breach put more than 77 million credit card numbers at risk <sup>[10](#cite-10)</sup>. The ramifications of alerting a user base and requiring that many users to change their cards and/or put a freeze on their credit cards can quickly lose current and future customers. These transactions can also impact customer credit scores if they unknowingly overdraft or miss a payment they were not expecting.
+Beyond the financial burden of dealing with a breach, the loss of trust for a company's website, business, and brand can be staggering. The Sony PlayStation breach put more than 77 million credit card numbers at risk <sup>[9](#cite-9)</sup>. The ramifications of alerting a user base and requiring that many users to change their cards and/or put a freeze on their credit cards can quickly lose current and future customers. These transactions can also impact customer credit scores if they unknowingly overdraft or miss a payment they were not expecting.
 
 ### Summary
 
-While developers and businesses may see this standard as a nuisance, it’s important to realize that these standards allow this industry as a whole to provide the level of security and trust necessary to keep it growing. The PCI DSS should be considered a baseline, minimal level of security for sites handling sensitive information - your site very well may need security controls that exceed this standard. Also adhering to the standards helps ensure protection for the business (legal, PR, and financial), as well as your customers (legal, financial).
+While developers and businesses may see this standard as a nuisance, it’s important to realize that these standards allow the industry as a whole to provide the level of security and trust necessary to keep it growing. The PCI DSS should be considered a baseline, minimal level of security for sites handling sensitive information - your site very well may need security controls that exceed this standard. Also adhering to the standards helps ensure protection for the business (legal, PR, and financial), as well as your customers (legal, financial).
 
 ## The Standard Itself
 
 _Note: This paper specifically excludes PA-DSS because Drupal is Open Source Software and (whether right or wrong) falls outside the PA-DSS standard._
 
-The PCI-DSS standard covers 12 requirements across 5 overarching categories<sup>[11](#cite-11)</sup>. Rather than restate what is already provided in the materials from the PCI council, the focus here is to specifically identify why each requirement directly affects the security of Drupal within the context of a complete CDE.
+The PCI-DSS standard covers 12 requirements across 5 overarching categories<sup>[10](#cite-10)</sup>. Rather than restate what is already provided in the materials from the PCI council, the focus here is to specifically identify why each requirement directly affects the security of Drupal within the context of a complete CDE.
 
 ### Requirement 1. Install and Maintain a Firewall
 
@@ -129,7 +129,7 @@ Audit trails are critical for identifying changes in the system because a single
 
 ### Requirement 11. Regularly test security systems and processes
 
-It’s not enough to have a system that works in theory. Periodic vulnerability scans and full penetration tests are necessary to prove that the system responds as expected. These tests have to be run regularly (at least quarterly) and are ideally run whenever there is a configuration or code change that could introduce a new vulnerability. Ensure you are using an officially Authorized Scanning Vendor (ASV) as listed on the PCI site<sup>[12](#cite-12)</sup>.
+It’s not enough to have a system that works in theory. Periodic vulnerability scans and full penetration tests are necessary to prove that the system responds as expected. These tests have to be run regularly (at least quarterly) and are ideally run whenever there is a configuration or code change that could introduce a new vulnerability. Ensure you are using an officially Authorized Scanning Vendor (ASV) as listed on the PCI site<sup>[11](#cite-11)</sup>.
 
 ### Requirement 12. Maintain a policy that addresses information security for all personnel
 
@@ -137,11 +137,11 @@ All the hardware testing, security scans, and audits in the world will not help 
 
 ## Self-Assessment Questionnaire
 
-Knowing how to get started can seem overwhelming at first. Thankfully, the PCI council has provided detailed reference guides and instructions<sup>[13](#cite-13)</sup>. All of these materials culminate to your Self-Assessment Questionnaire. This form is essentially a checklist that you must complete and adhere to in order to obtain and maintain PCI compliance.
+Knowing how to get started can seem overwhelming at first. Thankfully, the PCI council has provided detailed reference guides and instructions<sup>[12](#cite-12)</sup>. All of these materials culminate to your Self-Assessment Questionnaire. This form is essentially a checklist that you must complete and adhere to in order to obtain and maintain PCI compliance.
 
 Your credit card processor and acquiring bank are required to ask you for annual SAQ forms - if they haven’t asked yet, they will soon!
 
-The key is determining which SAQ you should be filling out because they vary wildly in terms of quantity of responsibilities and the amount of time and effort it takes to complete them. SAQ A has 14 items and usually can be completed in under a day if not within a couple of hours. SAQ D contains between 326 and 347 items and can take months of time and millions of dollars to achieve<sup>[14](#cite-14)</sup>. The following section will help you make sense of these different levels and how you can select the method that balances your business needs with your ability to achieve compliance.
+The key is determining which SAQ you should be filling out because they vary wildly in terms of quantity of responsibilities and the amount of time and effort it takes to complete them. SAQ A has 14 items and usually can be completed in under a day if not within a couple of hours. SAQ D contains between 326 and 347 items and can take months of time and millions of dollars to achieve<sup>[13](#cite-13)</sup>. The following section will help you make sense of these different levels and how you can select the method that balances your business needs with your ability to achieve compliance.
 
 ### Determining Your Responsibilities
 
@@ -236,7 +236,7 @@ Example iframe solutions:
 
 The common denominator in all shared-management configurations is that the checkout process begins on Drupal website (a component of the CDE) managed by the merchant, but the customer is technically sending their credit card credentials directly to the payment processor’s CDE. This occurs by redirection (HPP), loading a payment form from their servers (iframe), or posting the form directly through JavaScript or the action attribute on an HTML form (direct post).
 
-One might assume that a shared-management approach would qualify them for SAQ A. However, section 3.4.3 in the _PCI DSS eCommerce Guidelines Supplement_ document makes it clear that each shared-management method has vulnerabilities <sup>[15](#cite-15)</sup>, which are described in more detail below. Furthermore, _Understanding the SAQs for PCI DSS v3.0_ (in addition to the SAQ A and SAQ A-EP v3.0 forms) specifically states that Direct Post and Hosted Payment Page solutions cannot qualify for SAQ A and must use SAQ A-EP<sup>[16](#cite-16)</sup>.
+One might assume that a shared-management approach would qualify them for SAQ A. However, section 3.4.3 in the _PCI DSS eCommerce Guidelines Supplement_ document makes it clear that each shared-management method has vulnerabilities <sup>[14](#cite-14)</sup>, which are described in more detail below. Furthermore, _Understanding the SAQs for PCI DSS v3.0_ (in addition to the SAQ A and SAQ A-EP v3.0 forms) specifically states that Direct Post and Hosted Payment Page solutions cannot qualify for SAQ A and must use SAQ A-EP<sup>[15](#cite-15)</sup>.
 
 Frustrating as this may be for those wanting to achieve PCI SAQ A, the good news is that using a direct post or hosted payment page solution can still qualify as SAQ A-EP, which is much easier to achieve in comparison to SAQ D because a significant amount of the responsibility can still be considered outsourced.
 
@@ -248,9 +248,9 @@ In a wholly outsourced solution, everything regarding the Drupal application is 
 
 Version 3.0 eliminated much of the confusion that existed in version 2.0 with respect to selecting the appropriate SAQ form for each shared-management solution. Previously, one could formulate a strong argument for SAQ A, SAQ C, or some arbitrary hybrid of the two. And given the large difference in the implications for each SAQ type (see Figure 2), it was difficult to confidently make a final determination about each of these shared-management solutions. SAQ A-EP not only introduced a middle ground, but the requirements for SAQ A and SAQ A-EP made it clear with respect to which solution was appropriate for each—iframe methods are compatible with SAQ A while direct post and hosted payment page methods are not.
 
-The decision to allow iframe solutions into SAQ A is not without controversy because the one can still make the case that a breach of the Drupal application layer can compromise the delivery of the iframe. Therefore, while the final recommendations of this paper are to use iframe solutions in order to fall within scope of SAQ A, it is also recommended to always comply with SAQ A-EP (at a minimum) for security reasons and to future proof your Drupal site against the next versions of the PCI-DSS standard.
+The decision to allow iframe solutions into SAQ A is not without controversy because one can still make the case that a breach of the Drupal application layer can compromise the delivery of the iframe. Therefore, while the final recommendations of this paper are to use iframe solutions in order to fall within the scope of SAQ A, it is also recommended to always comply with SAQ A-EP (at a minimum) for security reasons and to future proof your Drupal site against the next versions of the PCI-DSS standard.
 
-There are other important changes introduced in the 3.0 standard, such as the requirement to have all components of the CDE documented with an explicit determination of responsibility for each component. Also noteworthy is that SAQ C is no longer applicable for eCommerce channels, which means that all merchant-managed solutions must comply with the more rigorous SAQ D. For a full list of changes, please see the _Version 3.0 Change Highlights_ and _Summary of Changes from PCI DSS Version 2.0 to 3.0_ documents<sup>[17](#cite-17),[18](#cite-18)</sup>.
+There are other important changes introduced in the 3.0 standard, such as the requirement to have all components of the CDE documented with an explicit determination of responsibility for each component. Also noteworthy is that SAQ C is no longer applicable for eCommerce channels, which means that all merchant-managed solutions must comply with the more rigorous SAQ D. For a full list of changes, please see the _Version 3.0 Change Highlights_ and _Summary of Changes from PCI DSS Version 2.0 to 3.0_ documents<sup>[16](#cite-16),[17](#cite-17)</sup>.
 
 ## Selecting the Appropriate Method
 
@@ -260,7 +260,7 @@ SAQ A is obviously desirable and recommended because of its lower risk, time, an
 
 As of July 2014, there is no wholly-outsourced or shared-management solution for a Drupal 7 website using Ubercart with a recurring billing requirement. To store a customer’s credit card information directly on Authorize.Net’s servers, one must use the included Ubercart Authorize.Net module and enable the customer information manager (CIM) option. Unfortunately, the way Ubercart implements CIM requires the credit card information to pass through the Drupal application. Therefore this is a Merchant-managed solution, which requires one to adhere to every control item in SAQ D.
 
-_Author's Note: payment processors like Authorize.Net have the ability to use third-party iframes to integrate with their CIM service and adding this new functionality into the existing Ubercart modules (core or contrib) would make it significantly easier for merchants to achieve compliance. However, requests to add this functionality for Authorize.Net and other payment gateways have been made with no indication that they will be added to a development roadmap<sup>[19](#cite-19)</sup>._
+_Author's Note: payment processors like Authorize.Net have the ability to use third-party iframes to integrate with their CIM service and adding this new functionality into the existing Ubercart modules (core or contrib) would make it significantly easier for merchants to achieve compliance. However, requests to add this functionality for Authorize.Net and other payment gateways have been made with no indication that they will be added to a development roadmap<sup>[18](#cite-18)</sup>._
 
 ## Additional Considerations
 
@@ -274,7 +274,7 @@ There are also other payment methods on Drupal, such as the stand alone Stripe a
 
 ## Recommendations
 
-There is no one-size-fits-all solution because each company will have to balance the resources available with becoming compliant with the features necessary for the business. However, there are some general recommendations that apply across the board. The first is to use Drupal Commerce over Ubercart because Drupal Commerce has more developer focus on it and has a more consistent code base. It also has more shared-management payment solutions, and that trend is likely to continue. Finally, whenever possible, use a shared-management solution (SAQ A-EP compatible) over a merchant managed solution (SAQ D required) in order to significantly reduce the number of potential security exploits as well as the amount of security controls one has to meet in order to achieve compliance. If available, select an iframe solution (SAQ A compatible) because it further reduces the number of requirements necessary for compliance. However, it's still recommended for those using an iframe solution to still to adhere to SAQ A-EP because it'll future proof the CDE as well as adhere to many best practices, which should be implemented regardless.
+There is no one-size-fits-all solution. Each company will have to balance the resources available to become compliant with the features necessary for the business. However, there are some general recommendations that apply across the board. The first is to use Drupal Commerce over Ubercart because Drupal Commerce is more developer focused and has a more consistent code base. It also has more shared-management payment solutions, and that trend is likely to continue. Finally, whenever possible, use a shared-management solution (SAQ A-EP compatible) over a merchant managed solution (SAQ D required) in order to significantly reduce the number of potential security exploits as well as the amount of security controls one has to meet in order to achieve compliance. If available, select an iframe solution (SAQ A compatible) because it further reduces the number of requirements necessary for compliance. However, it's still recommended for those using an iframe solution to adhere to SAQ A-EP because it'll future proof the CDE as well as adhere to many best practices, which should be implemented regardless.
 
 ## Drupal Specific Exploits
 
@@ -282,11 +282,11 @@ To further emphasize the importance of adhering to the PCI standard (for both me
 
 * **Direct module manipulation.** The codebase could be altered in such a way to email, log, or display cardholder data upon form submission.
 * **Hook alters.** Any module could implement a form alter hook to add in additional validation and/or submission functions to grab the cardholder data.
-* **Scripting language.** A Flash or JavaScript keylogger or scraper could be used to harvest information as they are typing it in and sending it to an external server.
+* **Scripting language.** A Flash or JavaScript keylogger or scraper could be used to harvest information as it is typed in and send it to an external server.
 * **HTTPS disabling.** A single configuration change can remove HTTPS and user data would be passed unencrypted.
 * **Changing credentials.** Hackers could substitute in their own gateway credentials to collect information into a different account.
 * **Modifying a direct post.** Modification of the form action or JavaScript code could send the payment information to an alternative server that harvests cardholder data.
-* **Modifying an iframe.** Modification of the iframe code could be set to load a payment form from another website acting as a man in the middle attack.
+* **Modifying an iframe.** Modification of iframe code could be set to load a payment form from another website acting as a man-in-the-middle attack.
 * **Modifying a Hosted Payment Page.** Modification of the hosted payment page URL could redirect a customer to an alternative version of the payment site.
 
 For specific ways that the Drupal application can be compromised, please visit DrupalSecurityReport.org.
@@ -302,7 +302,7 @@ This is a non-exhaustive list of ways in which you can harden security at the Dr
 * **Storing security configurations in code.** Example: one can force secure pages to always be enabled by adding its system variables into the settings.php.
 * **Removing credentials from settings.php.** One can include a settings.local.php file within settings.php to ensure that sensitive information is not distributed.
 * **Security Updates.** Always keep up with the Drupal Security Advisories, which are released every Wednesday.
-* **Paranoia and Security Review Modules.** The modules provide and review your Drupal configurations to ensure they adhere to best security practices.
+* **Paranoia and Security Review Modules.** These modules provide and review your Drupal configurations to ensure they adhere to best security practices.
 * **Security Kit Module.** This module provides Drupal with various security hardening options. This lets you mitigate the risks of exploitation of different web application vulnerabilities.
 * **Holistic approach to compliance.** Consider PCI DSS compliance as part of the bigger picture of your organization’s compliance requirements. Often organizations will have overlapping compliance requirements from standards such as NIST 800-53, ISO27002, HIPAA, FISMA, and others.
 
@@ -320,13 +320,13 @@ While you are not necessarily the one responsible for achieving and maintaining 
 
 Your responsibility is to protect your business. It is up to you to be exceedingly clear with respect to who is responsible for PCI compliance before, during, and after a site launch. Any service agreements should also include language regarding each party's PCI-DSS compliance responsibilities as well as links to reference materials that provide clients with a means of understanding the implications of these responsibilities.
 
-This conversation will ultimately lead to a greater focus on security for all delivered websites. This not only can be valuable upsell to current clients, but it can become a competitive advantage and even attract new business.
+This conversation will ultimately lead to a greater focus on security for all delivered websites. This not only can be a valuable upsell to current clients, but it can become a competitive advantage and even attract new business.
 
 Finally, if you are a service provider that offers hosting or managed services for a site that handles credit cards and you agree to take on the PCI DSS responsibilities for your clients, you must comply with all PCI DSS requirements and complete SAQ D as a Service Provider, no matter what shopping cart solutions your clients have implemented.
 
 ## Final Message to Site Owners
 
-Your decisions about how you handle credit card data affect the livelihood of your business. While achieving PCI compliance may seem cost prohibitive, the reality is that a security breach could potentially bankrupt a small- to medium-size business. Beyond that, the decisions you make also affect the credit of your customers because identity theft can cost thousands of dollars and take months to years to reconcile. Finally, there can be legal and PR consequences that occur as a result of a breach, further affecting your ability to sustain and grow your business.
+Your decisions about how you handle credit card data affect the livelihood of your business. While achieving PCI compliance may seem cost prohibitive, the reality is that a security breach could potentially bankrupt a small to medium-size business. Beyond that, the decisions you make also affect the credit of your customers because identity theft can cost thousands of dollars and take months to years to reconcile. Finally, there can be legal and PR consequences that occur as a result of a breach, further affecting your ability to sustain and grow your business.
 
 ## Next Steps
 
@@ -336,17 +336,17 @@ Getting started can seem like a daunting task. However, breaking it down into sm
 * **Assess requirements.** Questions to ask: Which is more important: cost or features? Do you need any complex interactions or feature sets during checkout? Or can you suffice with using a PayPal button and calling it a day?
 * **Reduce CDE Scope.** Questions to ask: Is it possible to segment your network so that non-related servers are not maintained behind the same stateful firewalls as your eCommerce servers?
 * **Assess options.** Now that you know what you have to work with and what the goals are, evaluate the cost/effort/risk of 2-3 scenarios.
-* **Decide on a method.** Ultimately the business owner must ultimately pick a specific method balancing all the factors.
+* **Decide on a method.** Ultimately the business owner must pick a specific method balancing all the factors.
 * **Determine responsibilities.** Once a decision is made, it’s required to clearly articulate who is responsible for what at each stage in the development cycle. There should also be clear sign off points established.
 * **Complete the relevant SAQ:** The Self-Assessment Questionnaire is your key tool for performing a gap analysis and determining whether you are currently compliant.
-* **Prioritize PCI responsibilities.** Becoming compliant can take a long time, but some responsibilities are more critical than others. The PCI industry created a document title The Prioritized Approach to Pursue PCI DSS Compliance, which gives clear guidance on what should be done first to minimize risk during the entire process.
+* **Prioritize PCI responsibilities.** Becoming compliant can take a long time, but some responsibilities are more critical than others. The PCI industry created a document titled The Prioritized Approach to Pursue PCI DSS Compliance, which gives clear guidance on what should be done first to minimize risk during the entire process.
 * **Create plan and execute.** Once you’ve identified what needs to be done and created a plan, it’s time to make consistent progress toward checking off items on the list.
 
-At any stage, you also may wish to hire a professional to help expedite the process and ensure that your plan is sound. Specifically, you would want to locate a QSA (Qualified Security Assessor), which are organizations specifically “ordained” by the PCI Council to interpret and audit against the PCI DSS.
+At any stage, you also may wish to hire a professional to help expedite the process and ensure that your plan is sound. Specifically, you would want to locate a QSA (Qualified Security Assessor), which are organizations that have been qualified by the PCI Council to have their employees assess compliance to the PCI DSS standard.
 
 ## Top 8 Drupal PCI Compliance Myths
 
-_Author’s Note: This is a trimmed down summary from a longer article<sup>[20](#cite-20)</sup>._
+_Author’s Note: This is a trimmed down summary from a longer article<sup>[19](#cite-19)</sup>._
 
 ### Drupal is PCI compliant.
 
@@ -354,23 +354,23 @@ This is incorrect by itself because Drupal is only one piece of the cardholder d
 
 ### Ubercart and Drupal Commerce are PCI compliant.
 
-This is also incorrect in and of itself simply because it’s a component of a large system. However, the particular payment method chosen within each eCommerce solution can greatly influence how easy it is to become compliant.
+This is also incorrect in and of itself simply because it’s a component of a larger system. However, the particular payment method chosen within each eCommerce solution can greatly influence how easy it is to become compliant.
 
 ### I use HTTPS, therefore my Drupal website is secure.
 
-Securing the transaction from the Drupal application to the payment gateway addresses only one of the 12 sections of the PCI standard. There are a significant number of other vulnerabilities that can exist at the server, network, and application level,
+Securing the transaction from the Drupal application to the payment gateway addresses only one of the 12 sections of the PCI standard. There are a significant number of other vulnerabilities that can exist at the server, network, and application level.
 
 ### I can store numbers/CCV.
 
 Storing the 3-4 digit security code is never allowed under any circumstances. Storing the full credit card number at the Drupal layer is extremely risky and should not be done without a considerable amount of attention and expertise.
 
-### Shared-management Methods are 100% Foolproof
+### Shared-management Methods are 100% foolproof
 
-This is false because modifying code at the Drupal application layer can result in a man in the middle attack, the introduction of a keylogger, and other exploits.
+This is false because modifying code at the Drupal application layer can result in a man-in-the-middle attack, the introduction of a keylogger, and other exploits.
 
 ### I can achieve PCI compliance using shared hosting.
 
-Shared hosting is simply not secure enough for PCI SAQ A-EP, C, or D because there are simply too many users (both customers and employees of the hosting company) that have access to the server and you simply do not have enough control in locking down the system. Technically an iframe solution (SAQ A compatible) could get by on shared hosting, but we strongly recommend against it.
+Shared hosting is simply not secure enough for PCI SAQ A-EP or D because there are simply too many users (both customers and employees of the hosting company) that have access to the server and you simply do not have enough control in locking down the system. Technically an iframe solution (SAQ A compatible) could get by on shared hosting, but we strongly recommend against it.
 
 ### I can achieve PCI compliance using cloud hosting.
 
@@ -462,18 +462,17 @@ Copperly educates businesses in the Drupal community and beyond about cost-effec
 6. <a name="cite-6"></a>[2010 Annual Study: U.S. Cost of a Data Breach](http://goo.gl/EoEp6) - http://goo.gl/EoEp6
 7. <a name="cite-7"></a>[Heartland Data Breach: MasterCard, Visa Impose Hefty Fines](http://goo.gl/t0lQT) - http://goo.gl/t0lQT
 8. <a name="cite-8"></a>[Data-breach costs take toll on Target profit](http://goo.gl/aKjIOI) - http://goo.gl/aKjIOI
-9. <a name="cite-9"></a>[In Data Leaks, Culprits Often Are Mom, Pop](http://goo.gl/aGYbq) - http://goo.gl/aGYbq
-10. <a name="cite-10"></a>[Sony PlayStation suffers massive data breach](http://goo.gl/Um5cE) - http://goo.gl/Um5cE
-11. <a name="cite-11"></a>[Official PCI Security Standards Council Site](http://goo.gl/Z1lUr) - http://goo.gl/Z1lUr
-12. <a name="cite-12"></a>[Approved Scanning Vendors](http://goo.gl/FzzH6) - http://goo.gl/FzzH6
-13. <a name="cite-13"></a>[Navigation PCI DSS](http://goo.gl/H5jOK) - http://goo.gl/H5jOK
-14. <a name="cite-14"></a>[New! More! A First Look at the PCI DSS 3.0 SAQs](http://goo.gl/YnjkJZ) - http://goo.gl/YnjkJZ
-15. <a name="cite-15"></a>[Information Supplement: PCI DSS E-commerce Guidelines](http://goo.gl/R21rw) - http://goo.gl/R21rw
-16. <a name="cite-16"></a>[Understanding the SAQs for PCI DSS v3.0](http://goo.gl/V8ZrVF) - http://goo.gl/V8ZrVF
-17. <a name="cite-17"></a>[Version 3.0 Change Highlights](http://goo.gl/XDBzkz) - http://goo.gl/XDBzkz
-18. <a name="cite-18"></a>[Summary of Changes from PCI DSS Version 2.0 to 3.0](http://goo.gl/7nR1Gt) - http://goo.gl/7nR1Gt
-19. <a name="cite-19"></a>[Integrate Authorize.net (Hosted) CIM](http://goo.gl/rvOfz) - http://goo.gl/rvOfz
-20. <a name="cite-20"></a>[Top 12 Drupal PCI Compliance Myths](http://goo.gl/phZcg1) - http://goo.gl/phZcg1
+9. <a name="cite-10"></a>[Sony PlayStation suffers massive data breach](http://goo.gl/Um5cE) - http://goo.gl/Um5cE
+10. <a name="cite-11"></a>[Official PCI Security Standards Council Site](http://goo.gl/Z1lUr) - http://goo.gl/Z1lUr
+11. <a name="cite-12"></a>[Approved Scanning Vendors](http://goo.gl/FzzH6) - http://goo.gl/FzzH6
+12. <a name="cite-13"></a>[Navigation PCI DSS](http://goo.gl/H5jOK) - http://goo.gl/H5jOK
+13. <a name="cite-14"></a>[New! More! A First Look at the PCI DSS 3.0 SAQs](http://goo.gl/YnjkJZ) - http://goo.gl/YnjkJZ
+14. <a name="cite-15"></a>[Information Supplement: PCI DSS E-commerce Guidelines](http://goo.gl/R21rw) - http://goo.gl/R21rw
+15. <a name="cite-16"></a>[Understanding the SAQs for PCI DSS v3.0](http://goo.gl/V8ZrVF) - http://goo.gl/V8ZrVF
+16. <a name="cite-17"></a>[Version 3.0 Change Highlights](http://goo.gl/XDBzkz) - http://goo.gl/XDBzkz
+17. <a name="cite-18"></a>[Summary of Changes from PCI DSS Version 2.0 to 3.0](http://goo.gl/7nR1Gt) - http://goo.gl/7nR1Gt
+18. <a name="cite-19"></a>[Integrate Authorize.net (Hosted) CIM](http://goo.gl/rvOfz) - http://goo.gl/rvOfz
+19. <a name="cite-20"></a>[Top 12 Drupal PCI Compliance Myths](http://goo.gl/phZcg1) - http://goo.gl/phZcg1
 
 ## Footnotes
 
