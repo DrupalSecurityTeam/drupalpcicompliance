@@ -483,7 +483,7 @@ Copperly educates businesses in the Drupal community and beyond about cost-effec
 
 ## Reviewers
 
-The authors of this paper would like to thank the following individuals for reviewing the paper and providing feedback to improve its accuracy and utility. In alphabetical order: Ryan Cross (rcross), Robert Douglass (robertdouglass), Trent Hein (thein), Michael Hess (mlhess), Dave Long (longwave), Ryan Szrama (rszrama), Peter Wolanin (pwolanin).
+The authors of this paper would like to thank the following individuals for reviewing the paper and providing feedback to improve its accuracy and utility. In alphabetical order: Ryan Cross (rcross), Robert Douglass (robertdouglass), Trent Hein (thein), Michael Hess (mlhess), Dave Long (longwave), Alex Knoll (arknoll), Ryan Szrama (rszrama), Peter Wolanin (pwolanin).
 
 ## Appendix
 
