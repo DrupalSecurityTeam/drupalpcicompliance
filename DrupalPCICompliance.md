@@ -364,7 +364,7 @@ Securing the transaction from the Drupal application to the payment gateway addr
 
 Storing the 3-4 digit security code is never allowed under any circumstances. Storing the full credit card number at the Drupal layer is extremely risky and should not be done without a considerable amount of attention and expertise.
 
-### Shared-management Methods are 100% foolproof
+### Shared-management Methods are 100% foolproof.
 
 This is false because modifying code at the Drupal application layer can result in a man-in-the-middle attack, the introduction of a keylogger, and other exploits.
 
