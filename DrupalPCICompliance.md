@@ -6,9 +6,9 @@ _Authors:_
 * Greg Knaddison
 * Ned McClain
 
-v1.1
+v1.2
 
-July 15th, 2014
+August 25th, 2014
 
 Updated to PCI-DSS 3.0
 
