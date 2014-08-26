@@ -67,7 +67,7 @@ _Author's Note: It's important to note that ALL systems connected to the same ne
 
 ### Distributed Companies
 
-It’s not common for one company to control the entire end-to-end process of handing a credit card transaction. Therefore, it’s important to know exactly how these companies distribute the responsibility as well as liability for ensuring this process is secure.
+It’s not common for one company to control the entire end-to-end process of handling a credit card transaction. Therefore, it’s important to know exactly how these companies distribute the responsibility as well as liability for ensuring this process is secure.
 
 ### Financial
 
