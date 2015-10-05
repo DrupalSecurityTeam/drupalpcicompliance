@@ -24,7 +24,7 @@ The goal of this document is to help address the issues listed above and help ev
 
 ## Why we chose github flavored markdown for the source document.
 
-We wanted to make this document available in as many formats as possible to accomodate every possible audience and use case. Drupal modules may wish to include the github repo, markdown file, and/or html output for ease of use within a Drupal installation. Drupal evaluators may want a print copy that can be read our handed out.
+We wanted to make this document available in as many formats as possible to accommodate every possible audience and use case. Drupal modules may wish to include the github repo, markdown file, and/or html output for ease of use within a Drupal installation. Drupal evaluators may want a print copy that can be read our handed out.
 
 By starting with github flavored markdown, we can easily convert this document into HTML and PDF as needed. Also, markdown makes it easier to manage changes as this document evolves because issues can be filed on github and the git repo can store a full history of all the changes.
 
