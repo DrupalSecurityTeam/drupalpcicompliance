@@ -26,7 +26,7 @@ However, while it is possible to make a Drupal-based eCommerce environment PCI D
 
 How and where the credit card data is processed, transmitted, and stored determines the size, complexity, and risk associated with the cardholder data environment, which directly impacts the time, resources, and expertise required to achieve and maintain compliance. Whenever possible, wholly-outsourced and shared-management implementations can make it easier to complete this process. Merchant-managed solutions are the most cost prohibitive for all but enterprise level companies, and should be avoided unless the business needs require them.
 
-Regardless of the selected approach, it’s always necessary to adhere to the complete PCI DSS standard because a single exploit can undermine a company's PCI compliance, opening the company up to the financial and legal liabilities associated if the exploit where to be breached. Finally, the standard is becoming more stringent with each new version; therefore, what is optional today is likely to become a requirement in the near future.
+Regardless of the selected approach, it’s always necessary to adhere to the complete PCI DSS standard because a single exploit can undermine a company's PCI compliance, opening the company up to the financial and legal liabilities associated if the exploit were to be breached. Finally, the standard is becoming more stringent with each new version; therefore, what is optional today is likely to become a requirement in the near future.
 
 ## Definitions
 
