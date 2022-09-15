@@ -295,7 +295,7 @@ For specific ways that the Drupal application can be compromised, please visit D
 
 This is a non-exhaustive list of ways in which you can harden security at the Drupal level.
 
-* **PCI ASV Scans.** The results will alert you to areas of the site you may have looked over.
+* **PCI ASV Scans.** The results will alert you to areas of the site you may have overlooked.
 * **Hacked module.** This module will download a copy of each module and run a diff against them to ensure the code matches what was provided from Drupal.org.
 * **MD5 Check module.** This module will run a checksum of each module and provide a security alert if anything has changed.
 * **Deploy full codebase with each release.** This will ensure that any tampered files get replaced.
